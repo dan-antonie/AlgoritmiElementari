@@ -16,6 +16,8 @@
 		A6B4C0B91C4E828200212B51 /* AlgoritmiElementariUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C0B81C4E828200212B51 /* AlgoritmiElementariUITests.m */; };
 		A6B4C0C51C4E82FD00212B51 /* UtilsCitireScriere.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C0C41C4E82FD00212B51 /* UtilsCitireScriere.m */; };
 		A6B4C0C71C4E835200212B51 /* pp.in in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0C61C4E835200212B51 /* pp.in */; };
+		A6B4C0C91C4E9FBD00212B51 /* p370.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0C81C4E9FBD00212B51 /* p370.txt */; };
+		A6B4C0CB1C4EA31600212B51 /* p658.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0CA1C4EA31600212B51 /* p658.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		A6B4C0C31C4E82FD00212B51 /* UtilsCitireScriere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsCitireScriere.h; sourceTree = "<group>"; };
 		A6B4C0C41C4E82FD00212B51 /* UtilsCitireScriere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsCitireScriere.m; sourceTree = "<group>"; };
 		A6B4C0C61C4E835200212B51 /* pp.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pp.in; sourceTree = "<group>"; };
+		A6B4C0C81C4E9FBD00212B51 /* p370.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p370.txt; sourceTree = "<group>"; };
+		A6B4C0CA1C4EA31600212B51 /* p658.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p658.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				A6B4C0AF1C4E828200212B51 /* Info.plist */,
 				A6B4C09E1C4E828200212B51 /* Supporting Files */,
 				A6B4C0C61C4E835200212B51 /* pp.in */,
+				A6B4C0C81C4E9FBD00212B51 /* p370.txt */,
+				A6B4C0CA1C4EA31600212B51 /* p658.txt */,
 			);
 			path = AlgoritmiElementari;
 			sourceTree = "<group>";
@@ -200,9 +206,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6B4C0AE1C4E828200212B51 /* LaunchScreen.storyboard in Resources */,
+				A6B4C0CB1C4EA31600212B51 /* p658.txt in Resources */,
 				A6B4C0AB1C4E828200212B51 /* Assets.xcassets in Resources */,
 				A6B4C0C71C4E835200212B51 /* pp.in in Resources */,
 				A6B4C0A91C4E828200212B51 /* Main.storyboard in Resources */,
+				A6B4C0C91C4E9FBD00212B51 /* p370.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
