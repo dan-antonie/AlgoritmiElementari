@@ -14,6 +14,8 @@
 		A6B4C0AB1C4E828200212B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0AA1C4E828200212B51 /* Assets.xcassets */; };
 		A6B4C0AE1C4E828200212B51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0AC1C4E828200212B51 /* LaunchScreen.storyboard */; };
 		A6B4C0B91C4E828200212B51 /* AlgoritmiElementariUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C0B81C4E828200212B51 /* AlgoritmiElementariUITests.m */; };
+		A6B4C0C51C4E82FD00212B51 /* UtilsCitireScriere.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C0C41C4E82FD00212B51 /* UtilsCitireScriere.m */; };
+		A6B4C0C71C4E835200212B51 /* pp.in in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0C61C4E835200212B51 /* pp.in */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		A6B4C0B41C4E828200212B51 /* AlgoritmiElementariUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgoritmiElementariUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B4C0B81C4E828200212B51 /* AlgoritmiElementariUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgoritmiElementariUITests.m; sourceTree = "<group>"; };
 		A6B4C0BA1C4E828200212B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6B4C0C31C4E82FD00212B51 /* UtilsCitireScriere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsCitireScriere.h; sourceTree = "<group>"; };
+		A6B4C0C41C4E82FD00212B51 /* UtilsCitireScriere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsCitireScriere.m; sourceTree = "<group>"; };
+		A6B4C0C61C4E835200212B51 /* pp.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pp.in; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,11 +90,14 @@
 				A6B4C0A21C4E828200212B51 /* AppDelegate.m */,
 				A6B4C0A41C4E828200212B51 /* ViewController.h */,
 				A6B4C0A51C4E828200212B51 /* ViewController.m */,
+				A6B4C0C31C4E82FD00212B51 /* UtilsCitireScriere.h */,
+				A6B4C0C41C4E82FD00212B51 /* UtilsCitireScriere.m */,
 				A6B4C0A71C4E828200212B51 /* Main.storyboard */,
 				A6B4C0AA1C4E828200212B51 /* Assets.xcassets */,
 				A6B4C0AC1C4E828200212B51 /* LaunchScreen.storyboard */,
 				A6B4C0AF1C4E828200212B51 /* Info.plist */,
 				A6B4C09E1C4E828200212B51 /* Supporting Files */,
+				A6B4C0C61C4E835200212B51 /* pp.in */,
 			);
 			path = AlgoritmiElementari;
 			sourceTree = "<group>";
@@ -193,6 +201,7 @@
 			files = (
 				A6B4C0AE1C4E828200212B51 /* LaunchScreen.storyboard in Resources */,
 				A6B4C0AB1C4E828200212B51 /* Assets.xcassets in Resources */,
+				A6B4C0C71C4E835200212B51 /* pp.in in Resources */,
 				A6B4C0A91C4E828200212B51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6B4C0A61C4E828200212B51 /* ViewController.m in Sources */,
+				A6B4C0C51C4E82FD00212B51 /* UtilsCitireScriere.m in Sources */,
 				A6B4C0A31C4E828200212B51 /* AppDelegate.m in Sources */,
 				A6B4C0A01C4E828200212B51 /* main.m in Sources */,
 			);
