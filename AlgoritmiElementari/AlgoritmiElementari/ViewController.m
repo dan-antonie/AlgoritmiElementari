@@ -20,7 +20,7 @@
     [super viewDidLoad];
 }
 - (IBAction)calculeazaProblemaCurenta:(id)sender {
-    [self problema649];
+    [self sortareInsertie];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -254,5 +254,146 @@
     return nr;
     
 }
+
+
+-(void)problema648{
+    /*Se citeste un numar natural n si apoi n numere naturale nenule cu cel mult 5 cifre fiecare. Afisati fractia ireductibila minima care se poate construi folosind numere dintre cele citite.
+     Exemplu: pentru n=5 si numerele 7 9 8 3 6 fractia este 1/3 (obtinuta din simplificarea fractiei 3/9)*/
+    int minim = 99999;
+    int maxim = 0;
+    NSArray *arrayDeLinii = [UtilsCitireScriere arrayOfStringLinesFromFileName:@"P648"];
+    int totalNumere = [[arrayDeLinii objectAtIndex:0] intValue];
+    NSString *stringDeNumere = [arrayDeLinii objectAtIndex:1];
+    NSArray *arrayDeNumere = [UtilsCitireScriere arrayFromStringWithSpaceSeparatorFromString:stringDeNumere];
+    for (int i = 0; i<totalNumere; i++) {
+        int numarCurent = [[arrayDeNumere objectAtIndex:i] intValue];
+        if (numarCurent > maxim) {
+            maxim = numarCurent;
+        }
+        if (numarCurent < minim) {
+            minim = numarCurent;
+        }
+    }
+    int divizorComun = [self celMaiMareDivizorComunIntreMaxim:maxim SiMinim:minim];
+    maxim = maxim/divizorComun;
+    minim = minim/divizorComun;
+    
+    self.resultsTextView.text = [NSString stringWithFormat:@"%d/%d",minim,maxim];
+   
+    
+    
+}
+
+-(int)celMaiMareDivizorComunIntreMaxim:(int)numar1 SiMinim:(int)numar2{
+    int rezultat = 0;
+    while (numar2!= 0) {
+        rezultat = numar1%numar2;
+        numar1 = numar2;
+        numar2 = rezultat;
+    }
+    
+    return numar1;
+}
+
+
+-(void) problema643{
+    /*#643. [2014-11-05 - 18:16:17]
+     Se citeste un numar natural n. Afisati cifra maxima a lui n si de cate ori apare ea in numarul n.
+     Exemplu: Pentru n=457170 se va afisa 7 2 (7 e cifra maxima si ea apare de 2 ori)*/
+    NSArray *arrayDeLinii = [UtilsCitireScriere arrayOfStringLinesFromFileName:@"p643"];
+    int numarul = [[arrayDeLinii objectAtIndex:0] intValue];
+    int cifraMaxima = 0;
+    int contor = 0;
+    while (numarul != 0) {
+        int cifra = numarul%10;
+        numarul = numarul/10;
+        if (cifra>cifraMaxima) {
+            cifraMaxima = cifra;
+            contor = 1;
+        }
+        else if (cifra == cifraMaxima)
+            contor ++;
+    }
+    self.resultsTextView.text = [NSString stringWithFormat:@"cifra maxima este %d si apare de %d ori",cifraMaxima,contor];
+
+}
+
+-(void) problema642{
+    /*Se citeste un numar natural n. Calculati si afisati rasturnatul (oglinditul) sumei cifrelor lui n.
+     Exemplu: Pentru n=34565 se va afisa 32 (suma cifrelor este 23, iar rasturnatul lui 23 este 32). */
+    int sumaCifrelor = 0;
+    NSArray *arrayDeLinii = [UtilsCitireScriere arrayOfStringLinesFromFileName:@"p642"];
+    int numarul = [[arrayDeLinii objectAtIndex:0] intValue];
+    while (numarul != 0) {
+        sumaCifrelor = sumaCifrelor + numarul%10;
+        numarul = numarul/10;
+        
+    }
+     int inversulSumeiCifrelor = [self inversuluiUnuiNumarIntreg:sumaCifrelor];
+    self.resultsTextView.text = [NSString stringWithFormat:@"inversul sumei cifrelor este %d",inversulSumeiCifrelor];
+    
+}
+-(int)inversuluiUnuiNumarIntreg:(int)unNumar{
+    int inversul = 0;
+    while (unNumar != 0) {
+        inversul = inversul*10 + unNumar%10;
+        unNumar = unNumar/10;
+        
+    }
+    
+    return inversul;
+}
+
+-(void)problema607{
+    /*Se da un interval [a,b]. Afisati cate dintre numerele din intervalul [a,b] au proprietatea ca atat ele cat si rasturnatul lor sunt patrate perfecte (ex: 144 si 441). Se cere un algoritm eficient din punct de vederea al timpului de executie.
+     Exemplu: pentru intervalul [100,1000] sunt 10 astfel de numere. */
+    NSArray *arrayDeLinii = [UtilsCitireScriere arrayOfStringLinesFromFileName:@"p607"];
+    int inceputInterval = [[arrayDeLinii objectAtIndex:0] intValue];
+    int sfarsitInterval = [[arrayDeLinii objectAtIndex:1] intValue];
+    int numar = 0;
+    int contor = 0;
+    int rasturnatul = 0;
+    for (int i=sqrt(inceputInterval); i<sqrt(sfarsitInterval); i++) {
+        numar = i*i;
+        rasturnatul = [self inversuluiUnuiNumarIntreg:numar];
+        if (sqrt(rasturnatul) ==  lroundf(sqrt(rasturnatul))) {
+            contor++;
+        }
+    }
+    self.resultsTextView.text = [NSString stringWithFormat:@"%d",contor];
+    
+}
+
+
+- (void)sortareInsertie
+{
+    int vector[50];
+    NSString *vectorString = [UtilsCitireScriere citireDinFisier:@"sortare_insertie"];
+    NSArray *arrayStringuri = [UtilsCitireScriere arrayFromStringWithSpaceSeparatorFromString:vectorString];
+    
+    int nr = [arrayStringuri count];
+    
+    for (int i = 0; i <nr; i++) {
+        int val = [[arrayStringuri objectAtIndex:i] intValue];
+        vector[i] = val;
+    }
+    
+    for (int i = 0; i < nr; i++) {
+        
+        int aux = vector[i];
+        int j = i - 1;
+        while (j >= 0 && aux < vector[j]) {
+            vector[j+ 1] = vector[j];
+            j--;
+        }
+        
+        vector[j+ 1] = aux;
+        
+        
+    }
+    
+}
+
+
 
 @end

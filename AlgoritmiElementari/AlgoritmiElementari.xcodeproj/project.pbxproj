@@ -20,6 +20,11 @@
 		A6B4C0CB1C4EA31600212B51 /* p658.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0CA1C4EA31600212B51 /* p658.txt */; };
 		A6B4C0CD1C4EAD5A00212B51 /* p653.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0CC1C4EAD5A00212B51 /* p653.txt */; };
 		A6B4C0CF1C4EBB4E00212B51 /* p652.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0CE1C4EBB4E00212B51 /* p652.txt */; };
+		A6B4C0D11C4F9DDE00212B51 /* P648.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0D01C4F9DDE00212B51 /* P648.txt */; };
+		A6B4C0D31C4FAB0800212B51 /* p643.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0D21C4FAB0800212B51 /* p643.txt */; };
+		A6B4C0D71C4FB66A00212B51 /* p642.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0D61C4FB66A00212B51 /* p642.txt */; };
+		A6B4C0D91C4FBCDD00212B51 /* p607.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0D81C4FBCDD00212B51 /* p607.txt */; };
+		A6B4C0DB1C4FD57100212B51 /* sortare_insertie.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0DA1C4FD57100212B51 /* sortare_insertie.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		A6B4C0CA1C4EA31600212B51 /* p658.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p658.txt; sourceTree = "<group>"; };
 		A6B4C0CC1C4EAD5A00212B51 /* p653.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p653.txt; sourceTree = "<group>"; };
 		A6B4C0CE1C4EBB4E00212B51 /* p652.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p652.txt; sourceTree = "<group>"; };
+		A6B4C0D01C4F9DDE00212B51 /* P648.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = P648.txt; sourceTree = "<group>"; };
+		A6B4C0D21C4FAB0800212B51 /* p643.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p643.txt; sourceTree = "<group>"; };
+		A6B4C0D61C4FB66A00212B51 /* p642.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p642.txt; sourceTree = "<group>"; };
+		A6B4C0D81C4FBCDD00212B51 /* p607.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p607.txt; sourceTree = "<group>"; };
+		A6B4C0DA1C4FD57100212B51 /* sortare_insertie.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sortare_insertie.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +118,13 @@
 				A6B4C0C61C4E835200212B51 /* pp.in */,
 				A6B4C0C81C4E9FBD00212B51 /* p370.txt */,
 				A6B4C0CA1C4EA31600212B51 /* p658.txt */,
+				A6B4C0D01C4F9DDE00212B51 /* P648.txt */,
+				A6B4C0D61C4FB66A00212B51 /* p642.txt */,
+				A6B4C0D81C4FBCDD00212B51 /* p607.txt */,
 				A6B4C0CC1C4EAD5A00212B51 /* p653.txt */,
 				A6B4C0CE1C4EBB4E00212B51 /* p652.txt */,
+				A6B4C0D21C4FAB0800212B51 /* p643.txt */,
+				A6B4C0DA1C4FD57100212B51 /* sortare_insertie.txt */,
 			);
 			path = AlgoritmiElementari;
 			sourceTree = "<group>";
@@ -216,9 +231,14 @@
 				A6B4C0CD1C4EAD5A00212B51 /* p653.txt in Resources */,
 				A6B4C0CF1C4EBB4E00212B51 /* p652.txt in Resources */,
 				A6B4C0AB1C4E828200212B51 /* Assets.xcassets in Resources */,
+				A6B4C0D11C4F9DDE00212B51 /* P648.txt in Resources */,
+				A6B4C0DB1C4FD57100212B51 /* sortare_insertie.txt in Resources */,
 				A6B4C0C71C4E835200212B51 /* pp.in in Resources */,
+				A6B4C0D91C4FBCDD00212B51 /* p607.txt in Resources */,
+				A6B4C0D71C4FB66A00212B51 /* p642.txt in Resources */,
 				A6B4C0A91C4E828200212B51 /* Main.storyboard in Resources */,
 				A6B4C0C91C4E9FBD00212B51 /* p370.txt in Resources */,
+				A6B4C0D31C4FAB0800212B51 /* p643.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
