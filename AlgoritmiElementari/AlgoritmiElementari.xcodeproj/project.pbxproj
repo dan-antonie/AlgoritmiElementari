@@ -25,6 +25,8 @@
 		A6B4C0D71C4FB66A00212B51 /* p642.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0D61C4FB66A00212B51 /* p642.txt */; };
 		A6B4C0D91C4FBCDD00212B51 /* p607.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0D81C4FBCDD00212B51 /* p607.txt */; };
 		A6B4C0DB1C4FD57100212B51 /* sortare_insertie.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0DA1C4FD57100212B51 /* sortare_insertie.txt */; };
+		A6B4C0DD1C504BB000212B51 /* p584.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0DC1C504BB000212B51 /* p584.txt */; };
+		A6B4C0DF1C50589E00212B51 /* p569.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0DE1C50589E00212B51 /* p569.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		A6B4C0D61C4FB66A00212B51 /* p642.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p642.txt; sourceTree = "<group>"; };
 		A6B4C0D81C4FBCDD00212B51 /* p607.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p607.txt; sourceTree = "<group>"; };
 		A6B4C0DA1C4FD57100212B51 /* sortare_insertie.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sortare_insertie.txt; sourceTree = "<group>"; };
+		A6B4C0DC1C504BB000212B51 /* p584.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p584.txt; sourceTree = "<group>"; };
+		A6B4C0DE1C50589E00212B51 /* p569.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p569.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +127,9 @@
 				A6B4C0D81C4FBCDD00212B51 /* p607.txt */,
 				A6B4C0CC1C4EAD5A00212B51 /* p653.txt */,
 				A6B4C0CE1C4EBB4E00212B51 /* p652.txt */,
+				A6B4C0DC1C504BB000212B51 /* p584.txt */,
 				A6B4C0D21C4FAB0800212B51 /* p643.txt */,
+				A6B4C0DE1C50589E00212B51 /* p569.txt */,
 				A6B4C0DA1C4FD57100212B51 /* sortare_insertie.txt */,
 			);
 			path = AlgoritmiElementari;
@@ -227,8 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6B4C0AE1C4E828200212B51 /* LaunchScreen.storyboard in Resources */,
+				A6B4C0DD1C504BB000212B51 /* p584.txt in Resources */,
 				A6B4C0CB1C4EA31600212B51 /* p658.txt in Resources */,
 				A6B4C0CD1C4EAD5A00212B51 /* p653.txt in Resources */,
+				A6B4C0DF1C50589E00212B51 /* p569.txt in Resources */,
 				A6B4C0CF1C4EBB4E00212B51 /* p652.txt in Resources */,
 				A6B4C0AB1C4E828200212B51 /* Assets.xcassets in Resources */,
 				A6B4C0D11C4F9DDE00212B51 /* P648.txt in Resources */,

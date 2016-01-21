@@ -20,7 +20,7 @@
     [super viewDidLoad];
 }
 - (IBAction)calculeazaProblemaCurenta:(id)sender {
-    [self sortareInsertie];
+    [self problema569];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -393,7 +393,93 @@
     }
     
 }
+-(void) problema591{
+    /*Scrieti un program eficient din punct de vedere al timpului de executie, care genereaza si scrie in fisierul text munte.txt, pe prima linie, separate prin cate un spatiu, toate palindroamele-munte de exact noua cifre. Un palindrom de are aspect de munte daca cifrele sale sunt strict crescatoare pana la jumatatea numãrului(de exemplu 123454321, 123464321...).
+        Pe a doua linie in fisier se va scrie numarul de palindroame-munte generate.*/
+    int contor = 0;
+    NSMutableString *string = [[NSMutableString alloc]init];
+    for (int i = 1; i<5; i++) {
+        for (int j = i+1; j<6; j++) {
+            for (int k= j+1; k<7; k++) {
+                for (int l = k+1 ; l<8; l++) {
+                    for (int m = l+1 ; m<9; m++) {
+                        [string appendString:[NSString stringWithFormat:@"%d%d%d%d%d%d%d%d%d ",i,j,k,l,m,l,k,j,i]];
+                        contor++;
+                    }
+                }
+            }
+        }
+    }
+    [string appendString:[NSString stringWithFormat:@"\n %d",contor]];
+    self.resultsTextView.text = string;
+}
+-(void)problema584{
+    /*#584. [2014-04-03 - 13:33:09]
+     Pentru numerotarea paginilor unei serii enciclopedice, formate din unul sau mai multe volume, se presupune ca se folosesc in total n cifre. Fiecare volum are exact 300 de pagini, cu exceptia, eventual, a celui din urma care ar putea avea mai putine. Numerotarea paginilor incepe cu 1 in fiecare volum.
+     Se citeste de la tastatura n, numãrul de cifre (n are cel mult 9 cifre). Daca este posibil, sa se determine si sa scrie pe cran, pe linii distincte, numarul de volume din serie si numarul de pagini ale ultimului volum. Daca nu este posibil se va scrie mesajul "imposibil".
+     Exemplu:
+     Pentru n=999 se vor obtine 2 volume, unul cu 300 de pagini si unul cu 105 pagini (deci se vor afisa 2 si 105 pe randuri separate).
+     Pentru n=900 nu se poate face numerotarea*/
+    
+    NSArray *arrayDeLinii = [UtilsCitireScriere arrayOfStringLinesFromFileName:@"p584"];
+    int numarCifre = [[arrayDeLinii objectAtIndex:0] intValue];
+    int numarCifreVolum = 9+90*2+ 201*3;
+    int numarVolume = numarCifre/numarCifreVolum +1;
+    int restCifre = numarCifre%numarCifreVolum;
+    int numarPagini = 0;
+    BOOL nuSePoate = NO;
+    if (restCifre<10) {
+        numarPagini = restCifre;
+        
+    }else if (restCifre <190){
+        restCifre = restCifre - 9;
+        if (restCifre% 2 == 0) {
+            numarPagini = 9 + restCifre/2;
+        }
+        else {
+            nuSePoate = YES;
+        }
+    }else if ((restCifre-189)%3 ==0){
+        numarPagini = 99+ (restCifre-189)/3;
+    }else{
+        nuSePoate = YES;
+    }
+    if (nuSePoate) {
+        self.resultsTextView.text = [NSString stringWithFormat:@"nu se poate"];
+    }else{
+    self.resultsTextView.text = [NSString stringWithFormat:@"numarul de volume %d, iar al doilea are %d pagini",numarVolume,numarPagini];
+    }
 
+    
+}
+-(void)problema569{
+    /*Se citeste un numar natural n. Sa se afiseze cea mai scurta descompunere a lui n ca suma de termeni distincti din sirul lui Fibonacci.
+     Exemplu: 45 se descompune ca 34+8+3*/
+    NSArray *arrayDeLinii = [UtilsCitireScriere arrayOfStringLinesFromFileName:@"p569"];
+    int numar = [[arrayDeLinii objectAtIndex:0] intValue];
+    NSMutableString *string = [[NSMutableString alloc]init];
+    while (numar>0) {
+        int termenFibonaci = [self termenFibonaciMaiMicDecatNumarul:numar];
+        [string appendString:[NSString stringWithFormat:@"%d+",termenFibonaci]];
+        numar = numar - termenFibonaci;
+    }
+    self.resultsTextView.text = string;
+}
+
+
+-(int)termenFibonaciMaiMicDecatNumarul:(int)numarul{
+    int x = 1;
+    int y = 1;
+    int z = 0;
+    while (x+y<=numarul) {
+        z = x+y;
+        x = y;
+        y = z;
+    }
+    
+    return z;
+    
+}
 
 
 @end
