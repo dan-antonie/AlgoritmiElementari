@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "UtilsCitireScriere.h"
+#import "IntervalOrar.h"
+#import "Bomba.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *resultsTextView;
@@ -20,7 +22,90 @@
     [super viewDidLoad];
 }
 - (IBAction)calculeazaProblemaCurenta:(id)sender {
-    [self problema569];
+    [self problema573];
+    
+    
+   // NSMutableArray  *anArrayTest = [[NSMutableArray alloc] init];
+    
+    /*
+    [anArrayTest addObject:[NSNumber numberWithInt:1]]; //0
+    [anArrayTest addObject:[NSNumber numberWithInt:2]]; //1
+
+    [anArrayTest addObject:[NSNumber numberWithInt:8]]; //2
+
+    [anArrayTest addObject:[NSNumber numberWithInt:10]];//3
+
+    [anArrayTest addObject:[NSNumber numberWithInt:2]];//4
+
+    [anArrayTest addObject:[NSNumber numberWithInt:9]];//5
+
+    [anArrayTest addObject:[NSNumber numberWithInt:7]];//6
+
+    [anArrayTest addObject:[NSNumber numberWithInt:1]];//7
+
+    [anArrayTest addObject:[NSNumber numberWithInt:3]];//8
+    [anArrayTest addObject:[NSNumber numberWithInt:10]];
+
+    
+    
+    
+    NSMutableArray *anArray = [self productExceptSelfForArray:anArrayTest];
+    NSLog(@"Rezultatul este %@", [anArray description]);
+
+     
+     
+    
+    
+    NSString *pairs = [self pairsOfIndexesEqualsSum:10 forArray:anArrayTest];
+    NSLog(@"pairs is %@", pairs);
+     
+     */
+    
+    //  [(0, 1), (3, 5), (4, 8), (10, 12), (9, 10)]
+ /*   IntervalOrar *anInterval = [[IntervalOrar alloc] init];
+    anInterval.oraInceput = 0;
+    anInterval.oraSfarsit = 1;
+    [anArrayTest addObject:anInterval];
+    
+    IntervalOrar *anInterval1 = [[IntervalOrar alloc] init];
+    anInterval1.oraInceput = 3;
+    anInterval1.oraSfarsit = 5;
+    [anArrayTest addObject:anInterval1];
+    
+    
+    IntervalOrar *anInterval2 = [[IntervalOrar alloc] init];
+    anInterval2.oraInceput = 4;
+    anInterval2.oraSfarsit = 8;
+    [anArrayTest addObject:anInterval2];
+    
+    
+    IntervalOrar *anInterval3 = [[IntervalOrar alloc] init];
+    anInterval3.oraInceput = 10;
+    anInterval3.oraSfarsit = 12;
+    [anArrayTest addObject:anInterval3];
+    
+    IntervalOrar *anInterval4 = [[IntervalOrar alloc] init];
+    anInterval4.oraInceput = 9;
+    anInterval4.oraSfarsit = 10;
+    [anArrayTest addObject:anInterval4];
+    
+//    IntervalOrar *anInterval5 = [[IntervalOrar alloc] init];
+//    anInterval5.oraInceput = 11;
+//    anInterval5.oraSfarsit = 12;
+//    [anArrayTest addObject:anInterval5];
+//    
+    IntervalOrar *anInterval6 = [[IntervalOrar alloc] init];
+    anInterval6.oraInceput = 17;
+    anInterval6.oraSfarsit = 23;
+    [anArrayTest addObject:anInterval6];
+    
+    IntervalOrar *anInterval7 = [[IntervalOrar alloc] init];
+    anInterval7.oraInceput = 19;
+    anInterval7.oraSfarsit = 21;
+    [anArrayTest addObject:anInterval7];
+    
+    NSString *aString = [self intervaleOrareLiberePtCalendarArray:anArrayTest];
+    NSLog(@"Intervale libere %@", aString);*/
 }
 
 - (void)didReceiveMemoryWarning {
@@ -365,6 +450,175 @@
 }
 
 
+- (NSMutableArray *)productExceptSelfForArray:(NSArray *)theArray
+{
+    BOOL has2OrMoreZeros = NO;
+    BOOL hasOneZero = NO;
+    int produsTotal = 1; //element neutru
+    NSMutableArray *arrayToReturn = [NSMutableArray array];
+    
+    //calculez produsul total, fara zero
+    for (int i = 0; i < [theArray count]; i++)
+    {
+        int currentElem = [[theArray objectAtIndex:i] intValue];
+        
+        if (currentElem == 0) {
+            if (hasOneZero) {
+                has2OrMoreZeros = YES;
+            }else{
+                hasOneZero = YES;
+            }
+        }
+        
+        if (currentElem != 0) {
+            produsTotal = produsTotal * currentElem;
+        }
+    }
+    
+    //return an array of 0 elements if at least two elements are 0
+    if (has2OrMoreZeros) {
+        NSNumber *anIntegerZero = [NSNumber numberWithInt:0];
+        for (int i = 0; i < [theArray count]; i++) {
+            [arrayToReturn  addObject:anIntegerZero];
+        }
+    }else if (hasOneZero)
+    {
+        NSNumber *anIntegerZero = [NSNumber numberWithInt:0];
+
+        for (int i = 0; i < [theArray count]; i++) {
+            int currentElem = [[theArray objectAtIndex:i] intValue];
+            if (currentElem != 0) {
+                [arrayToReturn addObject:anIntegerZero];
+            }else
+            {
+                [arrayToReturn addObject:[NSNumber numberWithInt:produsTotal ]];
+            }
+        }
+    }else
+    {
+        for (int i = 0; i < [theArray count]; i++) {
+            int currentElem = [[theArray objectAtIndex:i] intValue];
+            [arrayToReturn addObject:[NSNumber numberWithInt:produsTotal/currentElem ]];
+        }
+
+    }
+    
+    return arrayToReturn;
+    
+    
+}
+
+
+- (NSString *)intervaleOrareLiberePtCalendarArray:(NSArray *)calendarArray
+{
+    NSMutableString *stringToReturn = [[NSMutableString alloc] init];
+    
+    
+    //solutia functioneaza pt intervale orare numere intregi, pe care le marcam intr-un array
+    
+    NSMutableArray *arrayOreLibere = [[NSMutableArray alloc] init]; //de la 0 la 23 toate orele
+    
+    //initializez un vector vizitat cu 0
+    for (int i = 0; i < 24; i++) {
+        [arrayOreLibere addObject:[NSNumber numberWithInt:0]];
+    }
+    
+    
+    for (int i = 0; i < [calendarArray count]; i++) {
+        IntervalOrar *intervalCurent = [calendarArray objectAtIndex:i];
+        
+        int valToReplace = [[arrayOreLibere objectAtIndex:intervalCurent.oraInceput] intValue];
+        
+        [arrayOreLibere replaceObjectAtIndex:intervalCurent.oraInceput withObject:[NSNumber numberWithInt:(valToReplace + 1)]]; //incepe un meeting
+        
+        
+        valToReplace = [[arrayOreLibere objectAtIndex:intervalCurent.oraSfarsit] intValue];
+
+        
+        [arrayOreLibere replaceObjectAtIndex:intervalCurent.oraSfarsit withObject:[NSNumber numberWithInt:valToReplace - 1]]; //se termina un meeting
+    }
+    
+    int intervalEOcupat = 0; //adaugam 1 daca intalnim 1, si scadem 1 daca intalnim 2; Daca intalnim 0 si intervalEOcupat = 0, atunci acea ora e libera
+    BOOL isDeschis = NO;
+    
+    
+    //rezolvare similara cu problema parantezelor, ca sa pastrez complexitatea in O(n)
+    for (int i = 0; i < [arrayOreLibere count]; i++) { //practic parcurgem fiecare ora
+        int valoareaCurenta = [[arrayOreLibere objectAtIndex:i] intValue];
+        
+        if (valoareaCurenta > 0) {
+            intervalEOcupat += 1;
+            
+            if (intervalEOcupat == 1 && isDeschis) {
+                isDeschis = NO;
+                //int valoaraUrm = i + 1;
+                
+                [stringToReturn appendString:[NSString stringWithFormat:@" %d )", i]];
+            }
+            
+        }else if (valoareaCurenta < 0)
+        {
+            intervalEOcupat -= 1;
+            if (intervalEOcupat == 0) {
+                //int valoaraAnterioara = i;
+
+                [stringToReturn appendString:[NSString stringWithFormat:@" ( %d ", i]];
+                isDeschis = YES;
+            }
+        }
+        
+    }
+    
+    //Mai sunt niste buguri de indecsi (e.x. se doua meetinguri se termina in acelasi timp)
+    //de asemenea, daca ultimul interval este deschis la capat , ex.  (22-
+    
+    //Complexitatea de timp O(n)
+    
+    return stringToReturn;
+}
+
+
+- (NSMutableString *)pairsOfIndexesEqualsSum:(int)theSum forArray:(NSArray *)theArray
+{
+    NSMutableString *stringToReturn = [NSMutableString string];
+    
+    //brute force algorithm (n^2)
+    for (int i = 0; i < [theArray count] - 1; i++) {
+        int elemI = [[theArray objectAtIndex:i] intValue];
+        for (int j = i + 1; j < [theArray count]; j++) {
+            int elemJ = [[theArray objectAtIndex:j] intValue];
+            if (elemI + elemJ == theSum) {
+                NSLog(@"( %d , %d ) ",i, j);
+                [stringToReturn appendString:[NSString stringWithFormat:@"(%d,%d) ", i, j]];
+            }
+        }
+    }
+    
+    /*
+     
+     Se poate rezolva in n log n sau daca folosim dictionare sau multimi sau hash-uri, complexitatea depinde de implementarea lor. Se adauga insa complexitate de spatiu
+     */
+    
+    //exemplu varianta cu functii build in pe nsarray (indexOfObject), complexitatea de timp depinde de implementare, probabil se apropie de O(n).
+    
+    for (int i = 0; i < [theArray count] ; i++) {
+        int elemCurent = [[theArray objectAtIndex:i] intValue];
+        
+        int possibleJ = (int)[theArray indexOfObject:[NSNumber numberWithInt:theSum - elemCurent ]];
+        
+        if (possibleJ >= 0) {// != NSNotfound
+            NSLog(@"Varianta cu functii built in ( %d , % d) ",i, possibleJ);
+            // va afisa de doua ori perechile  de indecsi
+        }
+
+    }
+    
+    
+    return stringToReturn;
+}
+
+
+
 - (void)sortareInsertie
 {
     int vector[50];
@@ -480,6 +734,506 @@
     return z;
     
 }
+-(void) problema598{
+    NSMutableString *entryString = [[NSMutableString alloc]init];
+    entryString = [UtilsCitireScriere citireDinFisier:@"p598"];
+    NSMutableString *outputString = [[NSMutableString alloc]init];
+    outputString = @" ";
+    int noOfCharaters = [entryString length];
+    
+    NSMutableString *firstHalf =[[NSMutableString alloc]init];
+    firstHalf = [entryString substringToIndex:noOfCharaters/2];
+    NSString *lastHalf = @"";
+    if (noOfCharaters%2 == 1) {
+        lastHalf = [entryString substringFromIndex:noOfCharaters/2 + 1];
+        //[entryString substringFromIndex:noOfCharaters/2];
+        NSString * midleCharacterString = [entryString substringWithRange:NSMakeRange(noOfCharaters/2, 1)];
+        outputString = [outputString stringByAppendingString:lastHalf];
+        outputString = [outputString stringByAppendingString:midleCharacterString];
+        outputString = [outputString stringByAppendingString:firstHalf];
+    }else{
+        lastHalf = [entryString substringFromIndex:noOfCharaters/2 ];
+
+        outputString = [outputString stringByAppendingString:lastHalf];
+        outputString = [outputString stringByAppendingString:firstHalf];
+        
+    }
+        
+    self.resultsTextView.text = outputString;
+    
+  }
+
+#pragma mark - Probleme siruri de caractere
+- (void)problema589containsString:(NSString *)sirulDeContinut
+{
+    NSMutableString *outputString = [[NSMutableString alloc]init];
+    NSString  *entryString = [UtilsCitireScriere citireDinFisier:@"p589"];
+    NSArray *cuvinte = [entryString componentsSeparatedByString:@" "];
+    NSCharacterSet *aSet = [NSCharacterSet characterSetWithCharactersInString:@" ,;"];
+    cuvinte = [entryString componentsSeparatedByCharactersInSet:aSet];
+    for (int i = 0; i<[cuvinte count]; i++) {
+        NSString *stringCurent = [cuvinte objectAtIndex:i];
+        if ([stringCurent rangeOfString:sirulDeContinut].length > 0)
+        {
+            [outputString appendString:stringCurent];
+            [outputString appendString:@"\n"];
+        }
+    }
+    
+    self.resultsTextView.text = outputString;
+}
+
+-(void)problema586{
+    NSMutableString *outputString = [[NSMutableString alloc]init];
+    NSString  *entryString = [UtilsCitireScriere citireDinFisier:@"p586"];
+    NSArray *cuvinte = [entryString componentsSeparatedByString:@" "];
+    NSCharacterSet *aSet = [NSCharacterSet characterSetWithCharactersInString:@" ,;"];
+    
+    cuvinte = [entryString componentsSeparatedByCharactersInSet:aSet];
+    NSString *sirulDeContinut = [cuvinte objectAtIndex:0];
+    for (int i = 1; i<[cuvinte count]; i++) {
+        NSString *stringCurent = [cuvinte objectAtIndex:i];
+        if ([stringCurent hasSuffix:sirulDeContinut])
+        {
+            [outputString appendString:stringCurent];
+            [outputString appendString:@"\n"];
+        }
+    }
+    
+    self.resultsTextView.text = outputString;
+}
+
+- (void)problema585
+{
+    NSMutableString *outputString = [[NSMutableString alloc]initWithString:@""];
+    NSString *entryString = [UtilsCitireScriere citireDinFisier:@"p585"];
+    NSArray *cuvinte = [entryString componentsSeparatedByString:@" "];
+    NSString *cuvantulA  = [cuvinte firstObject];
+    NSString *cuvantulB = [cuvinte lastObject];
+    
+    //NSMutableString *sufixA = [[NSMutableString alloc] init];
+    //NSMutableString *prefixB = [[NSMutableString alloc] init];
+    
+    
+    for (int i = 0; i < [cuvantulB length]; i++) {
+        NSString * prefixB = [cuvantulB substringToIndex:i];
+      
+        if ([cuvantulA hasSuffix:prefixB]) {
+            [outputString appendString:prefixB];
+            [outputString appendString:@"  "];
+        }
+    }
+    
+    if ([outputString length] == 0) {
+        [outputString appendString: @"Nu exista"];
+    }
+
+    self.resultsTextView.text = outputString;
+
+}
 
 
+- (void)problema13
+{
+    NSString *entryString = [UtilsCitireScriere citireDinFisier:@"p13"];
+    NSMutableArray *arayVocale = [[NSMutableArray alloc]init];
+    [arayVocale addObject:@"a"];
+    [arayVocale addObject:@"e"];
+    [arayVocale addObject:@"i"];
+    [arayVocale addObject:@"o"];
+    [arayVocale addObject:@"u"];
+     NSMutableString *outPutString = [[NSMutableString alloc]initWithString:entryString];
+    for (int i = 0; i<[arayVocale count]; i++) {
+        NSString *vocalaCurenta = [arayVocale objectAtIndex:i];
+        
+        NSRange rangeReplace = NSMakeRange(0, outPutString.length - 1);
+        
+        [outPutString replaceOccurrencesOfString:vocalaCurenta withString:@"" options: NSCaseInsensitiveSearch range:rangeReplace];
+        
+        
+    }
+    self.resultsTextView.text = outPutString;
+    
+}
+
+- (void)problema27
+{
+    BOOL aGasitCeva = YES;
+    
+    NSString *entryString = [UtilsCitireScriere citireDinFisier:@"p27"];
+    NSMutableString *outputString = [[NSMutableString alloc] initWithString:entryString];
+
+    NSMutableArray *array = [NSMutableArray array];
+    for (int i = 0; i < [entryString length]; i++) {
+        [array addObject:[NSString stringWithFormat:@"%C", [entryString characterAtIndex:i]]];
+    }
+    
+    
+    
+    
+    while (aGasitCeva) {
+        aGasitCeva = NO;
+        
+        int i = 0;
+        while (i < [array count] - 1)
+        {
+            NSString *caracterulCurent = [array objectAtIndex:i];
+            NSString *caracterulUrmator = [array objectAtIndex:i + 1];
+            if ([caracterulCurent isEqualToString:caracterulUrmator]) {
+                [array removeObjectAtIndex:i+ 1];
+                [array removeObjectAtIndex:i];
+
+                i --;
+                i --;
+                aGasitCeva = YES;
+            }
+            
+            i ++;
+        }
+        
+     
+    }
+
+    outputString = [array description];
+    self.resultsTextView.text = outputString;
+}
+-(void)problema88{
+    
+    NSString *entryString = [UtilsCitireScriere citireDinFisier:@"p88"];
+    NSMutableString *outputString = [[NSMutableString alloc] initWithString:entryString];
+    
+    NSMutableArray *array = [NSMutableArray array];
+    for (int i = 0; i < [entryString length]; i++) {
+        [array addObject:[NSString stringWithFormat:@"%C", [entryString characterAtIndex:i]]];
+    }
+    for (int i = 0; i<[array count] - 1; i++) {
+        if (i%2 ==0) {
+            NSString *aux =  [array objectAtIndex:i];
+            [array replaceObjectAtIndex:i withObject:[array objectAtIndex:i+1]];
+            [array replaceObjectAtIndex:i+1 withObject:aux];
+        }
+        
+            }
+    
+
+    self.resultsTextView.text = [array description];
+ 
+}
+-(void)problema259
+{
+    NSMutableString *outputString = [[NSMutableString alloc]init];
+    NSString  *entryString = [UtilsCitireScriere citireDinFisier:@"p259"];
+    NSArray *cuvinte = [entryString componentsSeparatedByString:@" "];
+    NSCharacterSet *aSet = [NSCharacterSet characterSetWithCharactersInString:@" ,;"];
+    cuvinte = [entryString componentsSeparatedByCharactersInSet:aSet];
+    NSMutableArray *arayVocale = [[NSMutableArray alloc]init];
+    [arayVocale addObject:@"a"];
+    [arayVocale addObject:@"e"];
+    [arayVocale addObject:@"i"];
+    [arayVocale addObject:@"o"];
+    [arayVocale addObject:@"u"];
+    for (int i = 0 ; i<[cuvinte count]; i++) {
+        BOOL arePrefixVocala = NO;
+        BOOL areSufixVocala = NO;
+        
+        NSString *cuvantCurent = [cuvinte objectAtIndex:i];
+        for (int j = 0 ; j< [arayVocale count]; j++) {
+            if ([cuvantCurent hasPrefix:[arayVocale objectAtIndex:j]]) {
+                arePrefixVocala = YES;
+            }
+            if ([cuvantCurent hasSuffix:[arayVocale objectAtIndex:j]]) {
+                areSufixVocala = YES;
+            }
+        }
+        if (areSufixVocala&&arePrefixVocala) {
+            [outputString appendString:cuvantCurent];
+        }
+    }
+    
+    self.resultsTextView.text = outputString;
+}
+
+
+- (void)problemaBombe
+{
+    int a[30][30];
+    for (int i = 0; i < 30; i++) {
+        for (int j = 0; j < 30; j++) {
+            a[i][j] = 0;
+        }
+        
+    }
+    
+    //initializare bombe
+    a[2][3] = 1;
+    a[2][5] = 1;
+    a[4][6] = 1;
+    a[6][8] = 1;
+    a[12][3] = 1;
+    a[10][4] = 1;
+    a[5][6] = 1;
+    a[2][20] = 1;
+    a[8][12] = 1;
+    
+    
+    NSLog(@"Matricea initiala \n %@", [self afisareMatrice:a]);
+    
+    NSMutableArray *coadaBombe = [[NSMutableArray alloc] init];
+    
+    Bomba *bombaInitiala = [[Bomba alloc] init];
+    bombaInitiala.i = 2;
+    bombaInitiala.j = 3;
+    
+    int razaExploxizie = 7;
+    
+    
+    
+    int indexInceput = 0;
+    int indexSfarsit = 0;
+    [coadaBombe addObject:bombaInitiala];
+    
+    
+    while (indexInceput <= indexSfarsit) {
+        
+        Bomba *bombaCurenta = [coadaBombe objectAtIndex:indexInceput];
+        
+        for (int i = bombaCurenta.i -razaExploxizie; i < bombaCurenta.i + razaExploxizie; i++) {
+            for (int j = bombaCurenta.j -razaExploxizie; j < bombaCurenta.j + razaExploxizie; j++) {
+                
+                if (i > 0 && j > 0) {
+                    if (a[i][j] == 1) {
+                        indexSfarsit ++;
+                        Bomba *nouaBombaInRaza = [[Bomba alloc] init];
+                        nouaBombaInRaza.j = j;
+                        nouaBombaInRaza.i = i;
+                        [coadaBombe addObject:nouaBombaInRaza];
+                    }
+                    
+                    a[i] [j] = 2 ; // adica o explodez
+                 }
+                
+                
+              
+                
+                
+            }
+        }
+        
+        
+        
+        //la sfarsit
+        indexInceput ++;
+        
+        
+    }
+    
+    
+    NSLog(@"Matricea finala \n %@", [self afisareMatrice:a]);
+    
+    
+    
+    
+    
+    
+    
+}
+
+- (NSString *)afisareMatrice:(int[30][30]) matricea
+{
+    NSMutableString *matriceaDeAfisat = [[NSMutableString alloc] init];
+    for (int i = 0; i < 30; i++) {
+        for (int j = 0; j < 30; j++) {
+            
+            [matriceaDeAfisat appendString:[NSString stringWithFormat:@"%d", matricea[i][j]]];
+        }
+        [matriceaDeAfisat appendString:@"\n"];
+    }
+    return matriceaDeAfisat;
+}
+-(void)problema447{
+    /*Se citeste un numar natural n si apoi n cuvinte. Numarati cate dintre ele sunt anagrame ale primului cuvant citit.*/
+    int count = 0;
+    NSString  *entryString = [UtilsCitireScriere citireDinFisier:@"p447"];
+    NSArray *cuvinte = [entryString componentsSeparatedByString:@" "];
+    NSString *primulCuvant = [cuvinte objectAtIndex:0];
+    for (int i=1; i<[cuvinte count]; i++) {
+        NSString * cuvantulCurent = [cuvinte objectAtIndex:i];
+        BOOL isAnagram = [self cuvantul:cuvantulCurent isAnagramofWord:primulCuvant];
+        if (isAnagram) {
+            count++;
+        }
+    }
+    self.resultsTextView.text = [NSString stringWithFormat:@"%d",count];
+}
+-(BOOL)cuvantul:(NSString*)cuvant isAnagramofWord:(NSString*)cuvant2{
+    BOOL isAnagram = YES;
+    NSMutableArray *array1 = [NSMutableArray array];
+    for (int i = 0; i < [cuvant length]; i++) {
+        [array1 addObject:[NSString stringWithFormat:@"%C", [cuvant characterAtIndex:i]]];
+
+    }
+    
+    NSMutableArray *array2 = [NSMutableArray array];
+    for (int i = 0; i < [cuvant2 length]; i++) {
+        [array2 addObject:[NSString stringWithFormat:@"%C", [cuvant2 characterAtIndex:i]]];
+        
+    }
+    
+    [array1 sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    [array2 sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    
+    if ([array1 count] != [array2 count] ) {
+        isAnagram =  NO;
+    }
+    
+    
+    for (int i = 0; i < [array1 count]; i++) {
+        NSString *string1 = [array1 objectAtIndex:i];
+        NSString *string2 = [array2 objectAtIndex:i];
+        if (![string1 isEqualToString:string2]) {
+            isAnagram =  NO;
+        }
+    }
+    
+    
+    
+    
+    return isAnagram;
+}
+-(void)problema583{
+    /*Din fisierul text doc.txt se citeste un text care contine informatii despre mai multe persoane, sub o forma nestructurata. Informatiile sunt dispuse pe linii de maxim 200 de caracte si pot contine CNP-uri valide. Stiind ca CNP-ul valid al unei persoane este un sir de 13 cifre consecutive, sa se scrie în fisierul text cnp.txt, pe linii distincte, toate CNP-urile extrase din text. Daca nu exista nici un CNP corect, se va scrie în fisier valoarea 0.
+     Exemplu:
+     doc.txt
+     Popesu Grigore, 14 ani,
+     1991212122334; Gigel Banu – 1031102453435,
+     Bujorului 7; Dana Marin: 2690405358687,
+     fara viza, 2450609987654 - Jane Doe
+     cnp.txt
+     1991212122334
+     1031102453435
+     2690405358687 
+     2450609987654*/
+    
+    NSString *entryString = [UtilsCitireScriere citireDinFisier:@"p583"];
+    NSCharacterSet *setOfSeparators = [NSCharacterSet characterSetWithCharactersInString:@" ,;-\n"];
+    NSArray *arrayOfStrings = [entryString componentsSeparatedByCharactersInSet:setOfSeparators]; //array with all  substrings separated by characters " " , ",", ";"
+    NSMutableString *stringWithCNPNumbers = [[NSMutableString alloc]init];
+    for (int i = 0; i<[arrayOfStrings count]; i++) {
+        NSString *curentString = [arrayOfStrings objectAtIndex:i];
+        if ([self isANumber:curentString]&&[curentString length] == 13) {
+            [stringWithCNPNumbers appendString:curentString];
+            [stringWithCNPNumbers appendString:@"\n"];
+        }
+    }
+    self.resultsTextView.text = stringWithCNPNumbers;
+}
+-(BOOL)isANumber:(NSString*)aString{
+    NSCharacterSet *noDigit = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
+    if ([aString rangeOfCharacterFromSet:noDigit].location == NSNotFound){
+        return YES;
+    }else{
+        return NO;
+    }
+    }
+
+-(void)problema508{
+    /*Se citesc doua cuvinte a si b avand cel mult 20 de litere fiecare. Determinati daca cuvantul b apare o singura data in cuvantul a.
+     Exemple:
+     a="anamaria", b="ana" raspunsul este da
+     a="anamariana", b="ana" raspunsul este nu
+     a="amalia", b="ana" raspunsul este nu*/
+    NSString *entryString = [UtilsCitireScriere citireDinFisier:@"508"];
+    NSArray *arrayOfStrings = [UtilsCitireScriere arrayFromStringWithSpaceSeparatorFromString:entryString];
+    NSString *cuvantulA = [arrayOfStrings objectAtIndex:0];
+    NSString *cuvantulB = [arrayOfStrings objectAtIndex:1];
+    NSError *error = NULL;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:cuvantulB options:NSRegularExpressionCaseInsensitive error:&error];
+    NSUInteger numberOfMatches = [regex numberOfMatchesInString:cuvantulA options:0 range:NSMakeRange(0, [cuvantulA length])];
+    NSLog(@"Found %lu",(unsigned long)numberOfMatches);
+    if (numberOfMatches == 1) {
+        self.resultsTextView.text = @"da";
+    }else{
+        self.resultsTextView.text = @"nu";
+    }
+    
+}
+-(void)problema523{
+    /*Se citeste un cuvant c cu cel mult 20 de litere. Sa se elimine din cuvantul c toate aparitiile primei litere.
+     Exemplu:
+     c="anamaria"
+     dupa prelucrare ramane "nmri"*/
+    NSString *entryString = [UtilsCitireScriere citireDinFisier:@"p523"];
+    NSString *firstCharacter = [entryString substringToIndex:1];
+    NSString *outputString  = [entryString stringByReplacingOccurrencesOfString:firstCharacter withString:@""];
+    self.resultsTextView.text = outputString;
+}
+-(void)problema524{
+    /*Se citeste un numar natural n si apoi n cuvinte formate din cel mult 20 de litere fiecare. Da se afiseze cel mai lung cuvant care se poate forma cu doua cuvinte dintre cele citite.
+     Exemplu:
+     6
+     arici
+     iepure
+     cal
+     hipopotam
+     oaie
+     pastrav
+     Cel mai lung cuvant poate fi hipopotampastrav sau pastravhipopotam */
+    NSString *entryString = [UtilsCitireScriere citireDinFisier:@"p524"];
+    NSArray *arrayOfStrings = [entryString componentsSeparatedByString:@"\n"];
+    NSMutableString *longestWord = [arrayOfStrings objectAtIndex:0];
+    NSMutableString *secondLongestWord = [arrayOfStrings objectAtIndex:0];
+    for (int i = 1; i<[arrayOfStrings count]; i++) {
+        NSString *currentWord = [arrayOfStrings objectAtIndex:i];
+        if ([currentWord length]>[longestWord length]) {
+            secondLongestWord = longestWord;
+            longestWord = currentWord;
+        }
+    }
+    self.resultsTextView.text = [NSString stringWithFormat:@"%@%@  %@%@",longestWord,secondLongestWord,secondLongestWord,longestWord];
+
+}
+-(void)problema525{
+    /* Se citesc 3 cuvinte s, a si b, s avand cel mult 50 de litere, iar a si b avand acelasi cel mult 10 litere fiecare. Inlocuiti in cuvantul s toate aparitiile lui a cu b.
+     Exemplu:
+     s="abracadabra"
+     a="bra"
+     b="12345"
+     va rezulta s="a12345cada12345"*/
+    NSString *entryString = [UtilsCitireScriere citireDinFisier:@"p525"];
+    NSArray *arrayOfStrings = [entryString componentsSeparatedByString:@"\n"];
+    NSString *originaString = [arrayOfStrings objectAtIndex:0];
+    NSString *stringToBeReplaced = [arrayOfStrings objectAtIndex:1];
+    NSString *replacingString = [arrayOfStrings objectAtIndex:2];
+    NSString *resultingString = [originaString stringByReplacingOccurrencesOfString:stringToBeReplaced withString:replacingString];
+    self.resultsTextView.text = resultingString;
+}
+-(void)problema573{
+    /*In fisierul cuvinte.in se afla cate unul pe linie un sir de cuvinte.
+     Sa se scrie un program care citeste cuvintele din fisier si le afiseazã in fisierul cuvinte.out in ordine alfabetica.
+     Exemplu:
+     cuvinte.in
+     ionut
+     ana
+     dana
+     anca
+     bomboane
+     cuvinte.out
+     ana 
+     anca 
+     bomboane 
+     dana 
+     ionut 
+     Rezolvare*/
+    NSString *entryString = [UtilsCitireScriere citireDinFisier:@"p573"];
+    NSArray *arrayOfStrings= [entryString componentsSeparatedByString:@"\n"];
+    
+    NSArray *outputArray = [arrayOfStrings sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    NSMutableString *resultString = [[NSMutableString alloc]init];
+    for (int i = 0; i<[outputArray count]; i++) {
+        [resultString appendString:[outputArray objectAtIndex:i]];
+        [resultString appendString:@"\n"];
+    }
+    self.resultsTextView.text = resultString;
+     
+}
 @end

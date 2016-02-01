@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A680493B1C5A6424005787DF /* p447.txt in Resources */ = {isa = PBXBuildFile; fileRef = A680493A1C5A6424005787DF /* p447.txt */; };
+		A680493D1C5CE5D9005787DF /* p583.txt in Resources */ = {isa = PBXBuildFile; fileRef = A680493C1C5CE5D9005787DF /* p583.txt */; };
+		A680493F1C5CF0A6005787DF /* 508.txt in Resources */ = {isa = PBXBuildFile; fileRef = A680493E1C5CF0A6005787DF /* 508.txt */; };
+		A68049411C5D4835005787DF /* p523.txt in Resources */ = {isa = PBXBuildFile; fileRef = A68049401C5D4835005787DF /* p523.txt */; };
+		A68049431C5D4E8B005787DF /* p524.txt in Resources */ = {isa = PBXBuildFile; fileRef = A68049421C5D4E8B005787DF /* p524.txt */; };
+		A68049451C5D51A8005787DF /* p525.txt in Resources */ = {isa = PBXBuildFile; fileRef = A68049441C5D51A8005787DF /* p525.txt */; };
+		A68049471C5FBB8D005787DF /* p573.txt in Resources */ = {isa = PBXBuildFile; fileRef = A68049461C5FBB8D005787DF /* p573.txt */; };
 		A6B4C0A01C4E828200212B51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C09F1C4E828200212B51 /* main.m */; };
 		A6B4C0A31C4E828200212B51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C0A21C4E828200212B51 /* AppDelegate.m */; };
 		A6B4C0A61C4E828200212B51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C0A51C4E828200212B51 /* ViewController.m */; };
@@ -27,6 +34,16 @@
 		A6B4C0DB1C4FD57100212B51 /* sortare_insertie.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0DA1C4FD57100212B51 /* sortare_insertie.txt */; };
 		A6B4C0DD1C504BB000212B51 /* p584.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0DC1C504BB000212B51 /* p584.txt */; };
 		A6B4C0DF1C50589E00212B51 /* p569.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B4C0DE1C50589E00212B51 /* p569.txt */; };
+		A6B4C0E21C513BEC00212B51 /* IntervalOrar.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C0E11C513BEC00212B51 /* IntervalOrar.m */; };
+		A6E7C8451C56602800B25CA2 /* p598.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6E7C8441C56602800B25CA2 /* p598.txt */; };
+		A6E7C8471C57A9CB00B25CA2 /* p589.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6E7C8461C57A9CB00B25CA2 /* p589.txt */; };
+		A6E7C8491C57ABF100B25CA2 /* p586.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6E7C8481C57ABF100B25CA2 /* p586.txt */; };
+		A6E7C84B1C57AED200B25CA2 /* p585.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6E7C84A1C57AED200B25CA2 /* p585.txt */; };
+		A6E7C84D1C57B24200B25CA2 /* p13.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6E7C84C1C57B24200B25CA2 /* p13.txt */; };
+		A6E7C84F1C57B82900B25CA2 /* p27.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6E7C84E1C57B82900B25CA2 /* p27.txt */; };
+		A6E7C8511C57BCE000B25CA2 /* p88.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6E7C8501C57BCE000B25CA2 /* p88.txt */; };
+		A6E7C8531C57C0BA00B25CA2 /* p259.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6E7C8521C57C0BA00B25CA2 /* p259.txt */; };
+		A6E7C8561C57C98A00B25CA2 /* Bomba.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E7C8551C57C98A00B25CA2 /* Bomba.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +57,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A680493A1C5A6424005787DF /* p447.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p447.txt; sourceTree = "<group>"; };
+		A680493C1C5CE5D9005787DF /* p583.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p583.txt; sourceTree = "<group>"; };
+		A680493E1C5CF0A6005787DF /* 508.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 508.txt; sourceTree = "<group>"; };
+		A68049401C5D4835005787DF /* p523.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p523.txt; sourceTree = "<group>"; };
+		A68049421C5D4E8B005787DF /* p524.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p524.txt; sourceTree = "<group>"; };
+		A68049441C5D51A8005787DF /* p525.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p525.txt; sourceTree = "<group>"; };
+		A68049461C5FBB8D005787DF /* p573.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p573.txt; sourceTree = "<group>"; };
 		A6B4C09B1C4E828200212B51 /* AlgoritmiElementari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgoritmiElementari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B4C09F1C4E828200212B51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6B4C0A11C4E828200212B51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +91,18 @@
 		A6B4C0DA1C4FD57100212B51 /* sortare_insertie.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sortare_insertie.txt; sourceTree = "<group>"; };
 		A6B4C0DC1C504BB000212B51 /* p584.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p584.txt; sourceTree = "<group>"; };
 		A6B4C0DE1C50589E00212B51 /* p569.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p569.txt; sourceTree = "<group>"; };
+		A6B4C0E01C513BEC00212B51 /* IntervalOrar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntervalOrar.h; sourceTree = "<group>"; };
+		A6B4C0E11C513BEC00212B51 /* IntervalOrar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntervalOrar.m; sourceTree = "<group>"; };
+		A6E7C8441C56602800B25CA2 /* p598.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p598.txt; sourceTree = "<group>"; };
+		A6E7C8461C57A9CB00B25CA2 /* p589.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p589.txt; sourceTree = "<group>"; };
+		A6E7C8481C57ABF100B25CA2 /* p586.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p586.txt; sourceTree = "<group>"; };
+		A6E7C84A1C57AED200B25CA2 /* p585.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p585.txt; sourceTree = "<group>"; };
+		A6E7C84C1C57B24200B25CA2 /* p13.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p13.txt; sourceTree = "<group>"; };
+		A6E7C84E1C57B82900B25CA2 /* p27.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p27.txt; sourceTree = "<group>"; };
+		A6E7C8501C57BCE000B25CA2 /* p88.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p88.txt; sourceTree = "<group>"; };
+		A6E7C8521C57C0BA00B25CA2 /* p259.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p259.txt; sourceTree = "<group>"; };
+		A6E7C8541C57C98A00B25CA2 /* Bomba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bomba.h; sourceTree = "<group>"; };
+		A6E7C8551C57C98A00B25CA2 /* Bomba.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bomba.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +123,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A68049481C5FE8B1005787DF /* fisiere stringuri si alg elem */ = {
+			isa = PBXGroup;
+			children = (
+				A6E7C8501C57BCE000B25CA2 /* p88.txt */,
+				A6B4C0C81C4E9FBD00212B51 /* p370.txt */,
+				A6B4C0CA1C4EA31600212B51 /* p658.txt */,
+				A6B4C0D01C4F9DDE00212B51 /* P648.txt */,
+				A6B4C0D61C4FB66A00212B51 /* p642.txt */,
+				A6B4C0D81C4FBCDD00212B51 /* p607.txt */,
+				A680493A1C5A6424005787DF /* p447.txt */,
+				A6E7C8461C57A9CB00B25CA2 /* p589.txt */,
+				A6E7C8481C57ABF100B25CA2 /* p586.txt */,
+				A6B4C0CC1C4EAD5A00212B51 /* p653.txt */,
+				A6B4C0CE1C4EBB4E00212B51 /* p652.txt */,
+				A6B4C0DC1C504BB000212B51 /* p584.txt */,
+				A68049421C5D4E8B005787DF /* p524.txt */,
+				A680493C1C5CE5D9005787DF /* p583.txt */,
+				A6B4C0D21C4FAB0800212B51 /* p643.txt */,
+				A6E7C84C1C57B24200B25CA2 /* p13.txt */,
+				A6B4C0DE1C50589E00212B51 /* p569.txt */,
+				A6B4C0DA1C4FD57100212B51 /* sortare_insertie.txt */,
+				A68049461C5FBB8D005787DF /* p573.txt */,
+				A6E7C8441C56602800B25CA2 /* p598.txt */,
+				A6E7C84A1C57AED200B25CA2 /* p585.txt */,
+				A68049441C5D51A8005787DF /* p525.txt */,
+				A680493E1C5CF0A6005787DF /* 508.txt */,
+				A6E7C8521C57C0BA00B25CA2 /* p259.txt */,
+				A68049401C5D4835005787DF /* p523.txt */,
+				A6E7C84E1C57B82900B25CA2 /* p27.txt */,
+			);
+			name = "fisiere stringuri si alg elem";
+			sourceTree = "<group>";
+		};
+		A68049491C5FE8E8005787DF /* fisiere liste */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "fisiere liste";
+			sourceTree = "<group>";
+		};
+		A680494A1C5FE8F6005787DF /* fisiere arbori */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "fisiere arbori";
+			sourceTree = "<group>";
+		};
 		A6B4C0921C4E828200212B51 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +195,10 @@
 				A6B4C0A21C4E828200212B51 /* AppDelegate.m */,
 				A6B4C0A41C4E828200212B51 /* ViewController.h */,
 				A6B4C0A51C4E828200212B51 /* ViewController.m */,
+				A6B4C0E01C513BEC00212B51 /* IntervalOrar.h */,
+				A6B4C0E11C513BEC00212B51 /* IntervalOrar.m */,
+				A6E7C8541C57C98A00B25CA2 /* Bomba.h */,
+				A6E7C8551C57C98A00B25CA2 /* Bomba.m */,
 				A6B4C0C31C4E82FD00212B51 /* UtilsCitireScriere.h */,
 				A6B4C0C41C4E82FD00212B51 /* UtilsCitireScriere.m */,
 				A6B4C0A71C4E828200212B51 /* Main.storyboard */,
@@ -120,17 +207,9 @@
 				A6B4C0AF1C4E828200212B51 /* Info.plist */,
 				A6B4C09E1C4E828200212B51 /* Supporting Files */,
 				A6B4C0C61C4E835200212B51 /* pp.in */,
-				A6B4C0C81C4E9FBD00212B51 /* p370.txt */,
-				A6B4C0CA1C4EA31600212B51 /* p658.txt */,
-				A6B4C0D01C4F9DDE00212B51 /* P648.txt */,
-				A6B4C0D61C4FB66A00212B51 /* p642.txt */,
-				A6B4C0D81C4FBCDD00212B51 /* p607.txt */,
-				A6B4C0CC1C4EAD5A00212B51 /* p653.txt */,
-				A6B4C0CE1C4EBB4E00212B51 /* p652.txt */,
-				A6B4C0DC1C504BB000212B51 /* p584.txt */,
-				A6B4C0D21C4FAB0800212B51 /* p643.txt */,
-				A6B4C0DE1C50589E00212B51 /* p569.txt */,
-				A6B4C0DA1C4FD57100212B51 /* sortare_insertie.txt */,
+				A680494A1C5FE8F6005787DF /* fisiere arbori */,
+				A68049491C5FE8E8005787DF /* fisiere liste */,
+				A68049481C5FE8B1005787DF /* fisiere stringuri si alg elem */,
 			);
 			path = AlgoritmiElementari;
 			sourceTree = "<group>";
@@ -232,21 +311,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68049451C5D51A8005787DF /* p525.txt in Resources */,
+				A680493F1C5CF0A6005787DF /* 508.txt in Resources */,
 				A6B4C0AE1C4E828200212B51 /* LaunchScreen.storyboard in Resources */,
 				A6B4C0DD1C504BB000212B51 /* p584.txt in Resources */,
 				A6B4C0CB1C4EA31600212B51 /* p658.txt in Resources */,
+				A6E7C8511C57BCE000B25CA2 /* p88.txt in Resources */,
+				A680493D1C5CE5D9005787DF /* p583.txt in Resources */,
+				A6E7C84F1C57B82900B25CA2 /* p27.txt in Resources */,
 				A6B4C0CD1C4EAD5A00212B51 /* p653.txt in Resources */,
 				A6B4C0DF1C50589E00212B51 /* p569.txt in Resources */,
+				A6E7C84D1C57B24200B25CA2 /* p13.txt in Resources */,
 				A6B4C0CF1C4EBB4E00212B51 /* p652.txt in Resources */,
 				A6B4C0AB1C4E828200212B51 /* Assets.xcassets in Resources */,
+				A6E7C8491C57ABF100B25CA2 /* p586.txt in Resources */,
 				A6B4C0D11C4F9DDE00212B51 /* P648.txt in Resources */,
 				A6B4C0DB1C4FD57100212B51 /* sortare_insertie.txt in Resources */,
+				A680493B1C5A6424005787DF /* p447.txt in Resources */,
 				A6B4C0C71C4E835200212B51 /* pp.in in Resources */,
 				A6B4C0D91C4FBCDD00212B51 /* p607.txt in Resources */,
+				A68049471C5FBB8D005787DF /* p573.txt in Resources */,
+				A6E7C84B1C57AED200B25CA2 /* p585.txt in Resources */,
 				A6B4C0D71C4FB66A00212B51 /* p642.txt in Resources */,
+				A6E7C8451C56602800B25CA2 /* p598.txt in Resources */,
+				A68049431C5D4E8B005787DF /* p524.txt in Resources */,
 				A6B4C0A91C4E828200212B51 /* Main.storyboard in Resources */,
 				A6B4C0C91C4E9FBD00212B51 /* p370.txt in Resources */,
 				A6B4C0D31C4FAB0800212B51 /* p643.txt in Resources */,
+				A6E7C8531C57C0BA00B25CA2 /* p259.txt in Resources */,
+				A68049411C5D4835005787DF /* p523.txt in Resources */,
+				A6E7C8471C57A9CB00B25CA2 /* p589.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +358,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B4C0E21C513BEC00212B51 /* IntervalOrar.m in Sources */,
 				A6B4C0A61C4E828200212B51 /* ViewController.m in Sources */,
 				A6B4C0C51C4E82FD00212B51 /* UtilsCitireScriere.m in Sources */,
+				A6E7C8561C57C98A00B25CA2 /* Bomba.m in Sources */,
 				A6B4C0A31C4E828200212B51 /* AppDelegate.m in Sources */,
 				A6B4C0A01C4E828200212B51 /* main.m in Sources */,
 			);
@@ -456,6 +552,7 @@
 				A6B4C0BF1C4E828200212B51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6B4C0C01C4E828200212B51 /* Build configuration list for PBXNativeTarget "AlgoritmiElementariUITests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +561,7 @@
 				A6B4C0C21C4E828200212B51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
