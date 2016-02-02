@@ -22,7 +22,7 @@
     [super viewDidLoad];
 }
 - (IBAction)calculeazaProblemaCurenta:(id)sender {
-    [self problema573];
+    [self problemaBombe];
     
     
    // NSMutableArray  *anArrayTest = [[NSMutableArray alloc] init];
@@ -996,26 +996,23 @@
     while (indexInceput <= indexSfarsit) {
         
         Bomba *bombaCurenta = [coadaBombe objectAtIndex:indexInceput];
+
+        a[bombaCurenta.i ] [bombaCurenta.j] = 2;
         
-        for (int i = bombaCurenta.i -razaExploxizie; i < bombaCurenta.i + razaExploxizie; i++) {
-            for (int j = bombaCurenta.j -razaExploxizie; j < bombaCurenta.j + razaExploxizie; j++) {
+        for (int i = bombaCurenta.i - razaExploxizie; i < bombaCurenta.i + razaExploxizie; i++) {
+            for (int j = bombaCurenta.j - razaExploxizie; j < bombaCurenta.j+ razaExploxizie; j++) {
                 
-                if (i > 0 && j > 0) {
+                if (i >= 0 && j >= 0 && i < 30 && j < 30)
+                {
                     if (a[i][j] == 1) {
                         indexSfarsit ++;
-                        Bomba *nouaBombaInRaza = [[Bomba alloc] init];
-                        nouaBombaInRaza.j = j;
-                        nouaBombaInRaza.i = i;
-                        [coadaBombe addObject:nouaBombaInRaza];
+                        Bomba *nouaBomba = [[Bomba alloc] init];
+                        nouaBomba.i = i;
+                        nouaBomba.j = j;
+                        [coadaBombe addObject:nouaBomba];
                     }
-                    
-                    a[i] [j] = 2 ; // adica o explodez
-                 }
-                
-                
-              
-                
-                
+                    a[i][j] = 2;
+                }
             }
         }
         
@@ -1029,14 +1026,35 @@
     
     
     NSLog(@"Matricea finala \n %@", [self afisareMatrice:a]);
-    
-    
-    
-    
-    
-    
+
     
 }
+
+
+// cod comentat prb bombe
+
+//        for (int i = bombaCurenta.i -razaExploxizie; i < bombaCurenta.i + razaExploxizie; i++) {
+//            for (int j = bombaCurenta.j -razaExploxizie; j < bombaCurenta.j + razaExploxizie; j++) {
+//
+//                if (i > 0 && j > 0) {
+//                    if (a[i][j] == 1) {
+//                        indexSfarsit ++;
+//                        Bomba *nouaBombaInRaza = [[Bomba alloc] init];
+//                        nouaBombaInRaza.j = j;
+//                        nouaBombaInRaza.i = i;
+//                        [coadaBombe addObject:nouaBombaInRaza];
+//                    }
+//
+//                    a[i] [j] = 2 ; // adica o explodez
+//                 }
+//
+//
+//
+//
+//
+//            }
+//        }
+
 
 - (NSString *)afisareMatrice:(int[30][30]) matricea
 {

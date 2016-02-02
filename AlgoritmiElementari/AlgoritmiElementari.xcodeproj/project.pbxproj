@@ -14,6 +14,13 @@
 		A68049431C5D4E8B005787DF /* p524.txt in Resources */ = {isa = PBXBuildFile; fileRef = A68049421C5D4E8B005787DF /* p524.txt */; };
 		A68049451C5D51A8005787DF /* p525.txt in Resources */ = {isa = PBXBuildFile; fileRef = A68049441C5D51A8005787DF /* p525.txt */; };
 		A68049471C5FBB8D005787DF /* p573.txt in Resources */ = {isa = PBXBuildFile; fileRef = A68049461C5FBB8D005787DF /* p573.txt */; };
+		A680494D1C5FE9FE005787DF /* ArboriViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A680494C1C5FE9FE005787DF /* ArboriViewController.m */; };
+		A68049501C5FEA0D005787DF /* ListeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A680494F1C5FEA0D005787DF /* ListeViewController.m */; };
+		A68049531C5FEBFA005787DF /* NodArbore.m in Sources */ = {isa = PBXBuildFile; fileRef = A68049521C5FEBFA005787DF /* NodArbore.m */; };
+		A68049551C5FF006005787DF /* arbori.txt in Resources */ = {isa = PBXBuildFile; fileRef = A68049541C5FF006005787DF /* arbori.txt */; };
+		A68049581C5FF872005787DF /* NodListaSimpla.m in Sources */ = {isa = PBXBuildFile; fileRef = A68049571C5FF872005787DF /* NodListaSimpla.m */; };
+		A680495D1C60020D005787DF /* lista.txt in Resources */ = {isa = PBXBuildFile; fileRef = A680495C1C60020D005787DF /* lista.txt */; };
+		A680495F1C614749005787DF /* interclasare.txt in Resources */ = {isa = PBXBuildFile; fileRef = A680495E1C614749005787DF /* interclasare.txt */; };
 		A6B4C0A01C4E828200212B51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C09F1C4E828200212B51 /* main.m */; };
 		A6B4C0A31C4E828200212B51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C0A21C4E828200212B51 /* AppDelegate.m */; };
 		A6B4C0A61C4E828200212B51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C0A51C4E828200212B51 /* ViewController.m */; };
@@ -64,6 +71,17 @@
 		A68049421C5D4E8B005787DF /* p524.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p524.txt; sourceTree = "<group>"; };
 		A68049441C5D51A8005787DF /* p525.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p525.txt; sourceTree = "<group>"; };
 		A68049461C5FBB8D005787DF /* p573.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p573.txt; sourceTree = "<group>"; };
+		A680494B1C5FE9FE005787DF /* ArboriViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArboriViewController.h; sourceTree = "<group>"; };
+		A680494C1C5FE9FE005787DF /* ArboriViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArboriViewController.m; sourceTree = "<group>"; };
+		A680494E1C5FEA0D005787DF /* ListeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListeViewController.h; sourceTree = "<group>"; };
+		A680494F1C5FEA0D005787DF /* ListeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListeViewController.m; sourceTree = "<group>"; };
+		A68049511C5FEBFA005787DF /* NodArbore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodArbore.h; sourceTree = "<group>"; };
+		A68049521C5FEBFA005787DF /* NodArbore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodArbore.m; sourceTree = "<group>"; };
+		A68049541C5FF006005787DF /* arbori.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arbori.txt; sourceTree = "<group>"; };
+		A68049561C5FF872005787DF /* NodListaSimpla.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodListaSimpla.h; sourceTree = "<group>"; };
+		A68049571C5FF872005787DF /* NodListaSimpla.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodListaSimpla.m; sourceTree = "<group>"; };
+		A680495C1C60020D005787DF /* lista.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lista.txt; sourceTree = "<group>"; };
+		A680495E1C614749005787DF /* interclasare.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = interclasare.txt; sourceTree = "<group>"; };
 		A6B4C09B1C4E828200212B51 /* AlgoritmiElementari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgoritmiElementari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B4C09F1C4E828200212B51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6B4C0A11C4E828200212B51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +177,7 @@
 		A68049491C5FE8E8005787DF /* fisiere liste */ = {
 			isa = PBXGroup;
 			children = (
+				A680495C1C60020D005787DF /* lista.txt */,
 			);
 			name = "fisiere liste";
 			sourceTree = "<group>";
@@ -166,6 +185,8 @@
 		A680494A1C5FE8F6005787DF /* fisiere arbori */ = {
 			isa = PBXGroup;
 			children = (
+				A68049541C5FF006005787DF /* arbori.txt */,
+				A680495E1C614749005787DF /* interclasare.txt */,
 			);
 			name = "fisiere arbori";
 			sourceTree = "<group>";
@@ -201,6 +222,14 @@
 				A6E7C8551C57C98A00B25CA2 /* Bomba.m */,
 				A6B4C0C31C4E82FD00212B51 /* UtilsCitireScriere.h */,
 				A6B4C0C41C4E82FD00212B51 /* UtilsCitireScriere.m */,
+				A680494B1C5FE9FE005787DF /* ArboriViewController.h */,
+				A680494C1C5FE9FE005787DF /* ArboriViewController.m */,
+				A680494E1C5FEA0D005787DF /* ListeViewController.h */,
+				A680494F1C5FEA0D005787DF /* ListeViewController.m */,
+				A68049511C5FEBFA005787DF /* NodArbore.h */,
+				A68049561C5FF872005787DF /* NodListaSimpla.h */,
+				A68049571C5FF872005787DF /* NodListaSimpla.m */,
+				A68049521C5FEBFA005787DF /* NodArbore.m */,
 				A6B4C0A71C4E828200212B51 /* Main.storyboard */,
 				A6B4C0AA1C4E828200212B51 /* Assets.xcassets */,
 				A6B4C0AC1C4E828200212B51 /* LaunchScreen.storyboard */,
@@ -326,11 +355,14 @@
 				A6B4C0AB1C4E828200212B51 /* Assets.xcassets in Resources */,
 				A6E7C8491C57ABF100B25CA2 /* p586.txt in Resources */,
 				A6B4C0D11C4F9DDE00212B51 /* P648.txt in Resources */,
+				A68049551C5FF006005787DF /* arbori.txt in Resources */,
 				A6B4C0DB1C4FD57100212B51 /* sortare_insertie.txt in Resources */,
 				A680493B1C5A6424005787DF /* p447.txt in Resources */,
 				A6B4C0C71C4E835200212B51 /* pp.in in Resources */,
 				A6B4C0D91C4FBCDD00212B51 /* p607.txt in Resources */,
+				A680495D1C60020D005787DF /* lista.txt in Resources */,
 				A68049471C5FBB8D005787DF /* p573.txt in Resources */,
+				A680495F1C614749005787DF /* interclasare.txt in Resources */,
 				A6E7C84B1C57AED200B25CA2 /* p585.txt in Resources */,
 				A6B4C0D71C4FB66A00212B51 /* p642.txt in Resources */,
 				A6E7C8451C56602800B25CA2 /* p598.txt in Resources */,
@@ -358,9 +390,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68049501C5FEA0D005787DF /* ListeViewController.m in Sources */,
 				A6B4C0E21C513BEC00212B51 /* IntervalOrar.m in Sources */,
 				A6B4C0A61C4E828200212B51 /* ViewController.m in Sources */,
+				A680494D1C5FE9FE005787DF /* ArboriViewController.m in Sources */,
 				A6B4C0C51C4E82FD00212B51 /* UtilsCitireScriere.m in Sources */,
+				A68049581C5FF872005787DF /* NodListaSimpla.m in Sources */,
+				A68049531C5FEBFA005787DF /* NodArbore.m in Sources */,
 				A6E7C8561C57C98A00B25CA2 /* Bomba.m in Sources */,
 				A6B4C0A31C4E828200212B51 /* AppDelegate.m in Sources */,
 				A6B4C0A01C4E828200212B51 /* main.m in Sources */,

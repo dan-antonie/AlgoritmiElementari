@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/UtilsCitireScriere.m"
-            timestampString = "474914693.214365"
+            timestampString = "476050802.831832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "+citireDinFisier:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/UtilsCitireScriere.m"
-            timestampString = "474914693.98824"
+            timestampString = "476050802.831832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "+arrayOfStringLinesFromFileName:"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/UtilsCitireScriere.m"
-            timestampString = "474914695.542046"
+            timestampString = "476050802.831832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "+arrayFromStringWithSpaceSeparatorFromString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -874,11 +874,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/ViewController.m"
-            timestampString = "475516057.65477"
+            timestampString = "476139631.693032"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "998"
-            endingLineNumber = "998"
+            startingLineNumber = "999"
+            endingLineNumber = "999"
             landmarkName = "-problemaBombe"
             landmarkType = "5">
          </BreakpointContent>
@@ -890,11 +890,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/ViewController.m"
-            timestampString = "475685719.825093"
+            timestampString = "476140137.595517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1056"
-            endingLineNumber = "1056"
+            startingLineNumber = "1074"
+            endingLineNumber = "1074"
             landmarkName = "-problema447"
             landmarkType = "5">
          </BreakpointContent>
@@ -906,11 +906,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/ViewController.m"
-            timestampString = "475685801.338171"
+            timestampString = "476140137.595517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1066"
-            endingLineNumber = "1066"
+            startingLineNumber = "1084"
+            endingLineNumber = "1084"
             landmarkName = "-problema447"
             landmarkType = "5">
          </BreakpointContent>
@@ -922,11 +922,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/ViewController.m"
-            timestampString = "475696858.420152"
+            timestampString = "476140137.595517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1069"
-            endingLineNumber = "1069"
+            startingLineNumber = "1087"
+            endingLineNumber = "1087"
             landmarkName = "-cuvantul:isAnagramofWord:"
             landmarkType = "5">
          </BreakpointContent>
@@ -938,11 +938,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/ViewController.m"
-            timestampString = "475697246.842216"
+            timestampString = "476140137.595517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1098"
-            endingLineNumber = "1098"
+            startingLineNumber = "1116"
+            endingLineNumber = "1116"
             landmarkName = "-cuvantul:isAnagramofWord:"
             landmarkType = "5">
          </BreakpointContent>
@@ -954,11 +954,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/ViewController.m"
-            timestampString = "475703311.170172"
+            timestampString = "476140137.595517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1055"
-            endingLineNumber = "1055"
+            startingLineNumber = "1073"
+            endingLineNumber = "1073"
             landmarkName = "-problema447"
             landmarkType = "5">
          </BreakpointContent>
@@ -970,11 +970,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/ViewController.m"
-            timestampString = "475703313.898235"
+            timestampString = "476140137.595517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1063"
-            endingLineNumber = "1063"
+            startingLineNumber = "1081"
+            endingLineNumber = "1081"
             landmarkName = "-problema447"
             landmarkType = "5">
          </BreakpointContent>
@@ -986,27 +986,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/ViewController.m"
-            timestampString = "475704004.237213"
+            timestampString = "476140137.595517"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1077"
+            endingLineNumber = "1077"
+            landmarkName = "-problema447"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgoritmiElementari/ViewController.m"
+            timestampString = "476140137.595517"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1061"
+            endingLineNumber = "1061"
+            landmarkName = "-afisareMatrice:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgoritmiElementari/ViewController.m"
+            timestampString = "476140137.595517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1059"
             endingLineNumber = "1059"
-            landmarkName = "-problema447"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlgoritmiElementari/ViewController.m"
-            timestampString = "475704208.306318"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1043"
-            endingLineNumber = "1043"
             landmarkName = "-afisareMatrice:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1018,11 +1034,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/ViewController.m"
-            timestampString = "475704209.066917"
+            timestampString = "476140137.595517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1041"
-            endingLineNumber = "1041"
+            startingLineNumber = "1060"
+            endingLineNumber = "1060"
             landmarkName = "-afisareMatrice:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1034,27 +1050,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/ViewController.m"
-            timestampString = "475704209.62884"
+            timestampString = "476140137.595517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1042"
-            endingLineNumber = "1042"
-            landmarkName = "-afisareMatrice:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlgoritmiElementari/ViewController.m"
-            timestampString = "475853003.260012"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1145"
-            endingLineNumber = "1145"
+            startingLineNumber = "1163"
+            endingLineNumber = "1163"
             landmarkName = "-problema508"
             landmarkType = "5">
          </BreakpointContent>
@@ -1066,12 +1066,188 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlgoritmiElementari/ViewController.m"
-            timestampString = "475857733.759107"
+            timestampString = "476140137.595517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1149"
-            endingLineNumber = "1149"
+            startingLineNumber = "1167"
+            endingLineNumber = "1167"
             landmarkName = "-problema508"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgoritmiElementari/UtilsCitireScriere.m"
+            timestampString = "476050802.831832"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "+inserareBinaraInArbore:aInformatiei:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgoritmiElementari/UtilsCitireScriere.m"
+            timestampString = "476050802.831832"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "+creareArboreDeTest"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgoritmiElementari/ArboriViewController.m"
+            timestampString = "476137345.264995"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgoritmiElementari/UtilsCitireScriere.m"
+            timestampString = "476054377.773837"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "+creareListaSimplaTest"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgoritmiElementari/UtilsCitireScriere.m"
+            timestampString = "476054259.973072"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "+creareListaSimplaTest"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgoritmiElementari/ListeViewController.m"
+            timestampString = "476102902.092231"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-inserareNod:inLista:DupaNodulCuInfo:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgoritmiElementari/ListeViewController.m"
+            timestampString = "476114472.448709"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-inserareNod:inLista:inainteaNoduluiCuInfo:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgoritmiElementari/ListeViewController.m"
+            timestampString = "476114472.448709"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "-inserareNod:inLista:inainteaNoduluiCuInfo:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgoritmiElementari/ArboriViewController.m"
+            timestampString = "476138019.255816"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "-interclasareVectoriOrdinati:cuVector:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgoritmiElementari/ViewController.m"
+            timestampString = "476140137.595517"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1022"
+            endingLineNumber = "1022"
+            landmarkName = "-problemaBombe"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlgoritmiElementari/ViewController.m"
+            timestampString = "476140031.403383"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "998"
+            endingLineNumber = "998"
+            landmarkName = "-problemaBombe"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

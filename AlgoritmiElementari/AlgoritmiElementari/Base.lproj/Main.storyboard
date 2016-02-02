@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UEi-5d-76b">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -19,32 +19,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wC8-Ce-Om1">
-                                <rect key="frame" x="16" y="70" width="343" height="597"/>
+                                <rect key="frame" x="16" y="114" width="343" height="553"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaI-2z-QF0">
-                                <rect key="frame" x="116" y="20" width="100" height="35"/>
+                                <rect key="frame" x="26" y="64" width="100" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="3Z4-5o-hQd"/>
                                     <constraint firstAttribute="height" constant="35" id="O4A-0P-WFU"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Prb Curenta"/>
                                 <connections>
                                     <action selector="calculeazaProblemaCurenta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8zQ-tS-Tg7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaL-5c-OXW">
+                                <rect key="frame" x="252" y="67" width="54" height="30"/>
+                                <state key="normal" title="Arbori "/>
+                                <connections>
+                                    <segue destination="IO9-ko-f76" kind="push" id="y1S-MS-JAq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c36-fq-PjM">
+                                <rect key="frame" x="155" y="69" width="54" height="30"/>
+                                <state key="normal" title="Liste"/>
+                                <connections>
+                                    <segue destination="owO-ml-jgk" kind="push" id="1bQ-NW-7pF"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WaI-2z-QF0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2ZI-CQ-qS9"/>
+                            <constraint firstItem="c36-fq-PjM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="3BI-rZ-MFw"/>
+                            <constraint firstItem="c36-fq-PjM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="6rQ-IE-gdZ"/>
                             <constraint firstItem="wC8-Ce-Om1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AG2-Ec-Av9"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wC8-Ce-Om1" secondAttribute="bottom" id="GGf-5X-wGP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wC8-Ce-Om1" secondAttribute="trailing" id="TPC-1L-dC3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WaI-2z-QF0" secondAttribute="trailing" constant="186" id="WF3-2x-Hp4"/>
-                            <constraint firstItem="WaI-2z-QF0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="Wod-SA-eJb"/>
+                            <constraint firstItem="WaI-2z-QF0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Wod-SA-eJb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GaL-5c-OXW" secondAttribute="trailing" constant="53" id="XCg-EK-bam"/>
+                            <constraint firstItem="GaL-5c-OXW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="3" id="bn4-OZ-Uhr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c36-fq-PjM" secondAttribute="trailing" constant="150" id="npK-n0-vJU"/>
                             <constraint firstItem="wC8-Ce-Om1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="wQT-72-9Yc"/>
+                            <constraint firstItem="GaL-5c-OXW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="236" id="wRf-VE-U91"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -52,6 +72,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="JCW-K0-2Jz"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="resultsTextView" destination="wC8-Ce-Om1" id="vw3-yv-rBB"/>
@@ -59,7 +80,120 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="397.5" y="446.5"/>
+            <point key="canvasLocation" x="998.5" y="450.5"/>
+        </scene>
+        <!--Arbori View Controller-->
+        <scene sceneID="LAM-R4-GT5">
+            <objects>
+                <viewController id="IO9-ko-f76" customClass="ArboriViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xbJ-w6-pCl"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZAG-qS-D7v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TQH-UD-b52">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rA-vP-80F">
+                                <rect key="frame" x="154" y="72" width="140" height="30"/>
+                                <state key="normal" title="Prb curenta"/>
+                                <connections>
+                                    <action selector="rezolvareProblema:" destination="IO9-ko-f76" eventType="touchUpInside" id="4XW-Ge-0oU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aDl-on-qXd">
+                                <rect key="frame" x="20" y="124" width="374" height="512"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7rA-vP-80F" firstAttribute="leading" secondItem="TQH-UD-b52" secondAttribute="leadingMargin" constant="134" id="6Bj-Yy-dt7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7rA-vP-80F" secondAttribute="trailing" constant="100" id="N0Q-g1-XVo"/>
+                            <constraint firstItem="aDl-on-qXd" firstAttribute="leading" secondItem="TQH-UD-b52" secondAttribute="leadingMargin" id="Rrg-A3-cEM"/>
+                            <constraint firstItem="7rA-vP-80F" firstAttribute="top" secondItem="xbJ-w6-pCl" secondAttribute="bottom" constant="8" id="UqE-zW-KaI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aDl-on-qXd" secondAttribute="trailing" id="aKp-ig-UzB"/>
+                            <constraint firstItem="aDl-on-qXd" firstAttribute="top" secondItem="xbJ-w6-pCl" secondAttribute="bottom" constant="60" id="iiP-9Y-UP7"/>
+                            <constraint firstItem="ZAG-qS-D7v" firstAttribute="top" secondItem="aDl-on-qXd" secondAttribute="bottom" constant="100" id="ska-VJ-hxj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BuO-gk-aDq"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="resultsTextView" destination="aDl-on-qXd" id="hKf-eG-mk5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ol-U1-yN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688" y="475"/>
+        </scene>
+        <!--Liste View Controller-->
+        <scene sceneID="MUr-j1-wZX">
+            <objects>
+                <viewController id="owO-ml-jgk" customClass="ListeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XPf-uQ-NIK"/>
+                        <viewControllerLayoutGuide type="bottom" id="dEA-H6-H7Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KK1-cN-oNK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmi-x7-Lay">
+                                <rect key="frame" x="120" y="37" width="174" height="30"/>
+                                <state key="normal" title="Prb curenta"/>
+                                <connections>
+                                    <action selector="calculeazaPrbCurenta:" destination="owO-ml-jgk" eventType="touchUpInside" id="umq-GB-sCb"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZQu-gv-YpG">
+                                <rect key="frame" x="20" y="120" width="374" height="566"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dmi-x7-Lay" firstAttribute="leading" secondItem="KK1-cN-oNK" secondAttribute="leadingMargin" constant="100" id="63z-ad-oXe"/>
+                            <constraint firstItem="ZQu-gv-YpG" firstAttribute="leading" secondItem="KK1-cN-oNK" secondAttribute="leadingMargin" id="7P5-pz-J99"/>
+                            <constraint firstItem="ZQu-gv-YpG" firstAttribute="top" secondItem="XPf-uQ-NIK" secondAttribute="bottom" constant="100" id="BBG-tl-UUL"/>
+                            <constraint firstItem="dEA-H6-H7Y" firstAttribute="top" secondItem="ZQu-gv-YpG" secondAttribute="bottom" constant="50" id="BSr-f9-TGi"/>
+                            <constraint firstItem="Dmi-x7-Lay" firstAttribute="top" secondItem="XPf-uQ-NIK" secondAttribute="bottom" constant="17" id="IiY-R3-CSO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZQu-gv-YpG" secondAttribute="trailing" id="cBr-HS-3qi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dmi-x7-Lay" secondAttribute="trailing" constant="100" id="jP0-nv-9Gr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eFT-FO-L2i"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="resultsTextView" destination="ZQu-gv-YpG" id="8vn-zo-7pF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVc-ms-qei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701" y="-418"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ySF-RM-0Qq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UEi-5d-76b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4S6-zd-4zN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nBl-y5-6AE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abq-my-ifP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397" y="446"/>
         </scene>
     </scenes>
 </document>

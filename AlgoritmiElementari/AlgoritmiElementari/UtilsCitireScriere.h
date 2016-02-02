@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NodArbore.h"
+#import "NodListaSimpla.h"
+@interface UtilsCitireScriere : NSObject{
 
-@interface UtilsCitireScriere : NSObject
-
+}
 
 + (NSString *) citireDinFisier:(NSString *)numeFisierFaraExtensie;
 
@@ -18,4 +20,8 @@
 
 
 + (NSArray *)arrayFromStringWithSpaceSeparatorFromString:(NSString *)theString;
+
++ (NodArbore *)creareArboreDeTest;
++ (NodListaSimpla*)creareListaSimplaTest;
+
 @end
