@@ -10,10 +10,10 @@
 //
 
 #import "FlickerPhotoCoreData.h"
-
+#import "CoreDataObjectWriter.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FlickerPhotoCoreData (CoreDataProperties)
+@interface FlickerPhotoCoreData (CoreDataProperties)<CoreDataObjectWriter>
 
 @property (nullable, nonatomic, retain) NSString *photoUrl;
 @property (nullable, nonatomic, retain) NSString *title;

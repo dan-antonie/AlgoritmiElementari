@@ -16,14 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
+    [self getJsonDictionary];
 
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -32,24 +27,70 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return [self.imputOfArrayWithComents count];
 }
 
-/*
+-(void) getJsonDictionary{
+    NSURLSession *sesion = [NSURLSession sharedSession];
+    NSURLSessionDataTask *dataTask = [sesion dataTaskWithURL:[NSURL URLWithString:ENDPOINT_COMENTS] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error != nil) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Alert Error" message:@"nu se conecteaza" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil];
+                [errorAlert show];
+
+            });
+            
+        }else{
+            NSDictionary *dictionarryFromJson = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        [self parseFromJsonDictionary:dictionarryFromJson];
+        }
+        
+    }];
+    [dataTask resume];
+}
+-(void)parseFromJsonDictionary:(NSDictionary*)jsonDic{
+    NSMutableArray *arrayOfComents = [[NSMutableArray alloc]init];
+    /*transformam obiectele in obiecte de tip coment;
+     rezulta un array de comenturi;
+     transmitem array de comenturi la baza de date pentru salvare
+     
+     */
+    NSArray *arrayOfComentsFromJson = [jsonDic valueForKey:@"comments"];
+    
+    for (int i = 0; i < [arrayOfComentsFromJson count]; i++) {
+        NSDictionary *aDicComment = [arrayOfComentsFromJson objectAtIndex:i];
+        [MyCoreDataComent insertOrUpdateCoreDataObject:nil forDictionary:aDicComment inContext:[kCoreDataManager getCoreDataMainContext]];
+        //MyComent *aComment = [[MyComent alloc] initFromDictionary:aDicComment];
+        [arrayOfComents addObject:aDicComment];
+        
+    }
+    self.imputOfArrayWithComents = arrayOfComents;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.tableView reloadData];
+    });
+}
+
+
+
+
+
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CelulaComent" forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    MyComent *aComent = [self.imputOfArrayWithComents objectAtIndex:indexPath.row];
+    cell.textLabel.text = aComent.text;
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A65735031C6B634800A6FE3E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65735021C6B634800A6FE3E /* CoreData.framework */; };
+		A65735061C6B661F00A6FE3E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A65735041C6B661F00A6FE3E /* Model.xcdatamodeld */; };
 		A680496E1C61DE66005787DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A680496D1C61DE66005787DF /* main.m */; };
 		A68049711C61DE66005787DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A68049701C61DE66005787DF /* AppDelegate.m */; };
 		A68049741C61DE66005787DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68049731C61DE66005787DF /* ViewController.m */; };
@@ -14,6 +16,7 @@
 		A68049791C61DE66005787DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68049781C61DE66005787DF /* Assets.xcassets */; };
 		A680497C1C61DE66005787DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A680497A1C61DE66005787DF /* LaunchScreen.storyboard */; };
 		A68049871C61DE66005787DF /* InterviuTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A68049861C61DE66005787DF /* InterviuTestUITests.m */; };
+		A68049931C61E503005787DF /* MyComent.m in Sources */ = {isa = PBXBuildFile; fileRef = A68049921C61E503005787DF /* MyComent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A65735021C6B634800A6FE3E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A65735051C6B661F00A6FE3E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		A68049691C61DE66005787DF /* InterviuTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviuTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A680496D1C61DE66005787DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A680496F1C61DE66005787DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +45,8 @@
 		A68049821C61DE66005787DF /* InterviuTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviuTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68049861C61DE66005787DF /* InterviuTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviuTestUITests.m; sourceTree = "<group>"; };
 		A68049881C61DE66005787DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A68049911C61E503005787DF /* MyComent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyComent.h; sourceTree = "<group>"; };
+		A68049921C61E503005787DF /* MyComent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyComent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65735031C6B634800A6FE3E /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,7 @@
 		A68049601C61DE66005787DF = {
 			isa = PBXGroup;
 			children = (
+				A65735021C6B634800A6FE3E /* CoreData.framework */,
 				A680496B1C61DE66005787DF /* InterviuTest */,
 				A68049851C61DE66005787DF /* InterviuTestUITests */,
 				A680496A1C61DE66005787DF /* Products */,
@@ -83,6 +92,9 @@
 			children = (
 				A680496F1C61DE66005787DF /* AppDelegate.h */,
 				A68049701C61DE66005787DF /* AppDelegate.m */,
+				A68049911C61E503005787DF /* MyComent.h */,
+				A65735041C6B661F00A6FE3E /* Model.xcdatamodeld */,
+				A68049921C61E503005787DF /* MyComent.m */,
 				A68049721C61DE66005787DF /* ViewController.h */,
 				A68049731C61DE66005787DF /* ViewController.m */,
 				A68049751C61DE66005787DF /* Main.storyboard */,
@@ -212,6 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A68049741C61DE66005787DF /* ViewController.m in Sources */,
+				A68049931C61E503005787DF /* MyComent.m in Sources */,
+				A65735061C6B661F00A6FE3E /* Model.xcdatamodeld in Sources */,
 				A68049711C61DE66005787DF /* AppDelegate.m in Sources */,
 				A680496E1C61DE66005787DF /* main.m in Sources */,
 			);
@@ -402,6 +416,7 @@
 				A680498D1C61DE66005787DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A680498E1C61DE66005787DF /* Build configuration list for PBXNativeTarget "InterviuTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -410,8 +425,22 @@
 				A68049901C61DE66005787DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A65735041C6B661F00A6FE3E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A65735051C6B661F00A6FE3E /* Model.xcdatamodel */,
+			);
+			currentVersion = A65735051C6B661F00A6FE3E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A68049611C61DE66005787DF /* Project object */;
 }

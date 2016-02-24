@@ -7,13 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A656B5C51C74A71E00FD1212 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A656B5C41C74A71E00FD1212 /* PhotoViewController.m */; };
+		A656B5C71C74E76D00FD1212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A656B5C61C74E76D00FD1212 /* Main.storyboard */; };
+		A65734F51C69360A00A6FE3E /* FlickerPhotoCoreData+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A65734F21C69360A00A6FE3E /* FlickerPhotoCoreData+CoreDataProperties.m */; };
+		A65734F61C69360A00A6FE3E /* FlickerPhotoCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = A65734F41C69360A00A6FE3E /* FlickerPhotoCoreData.m */; };
+		A65734FD1C6B443100A6FE3E /* MyFlickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A65734FB1C6B443100A6FE3E /* MyFlickerTableViewCell.m */; };
+		A65734FE1C6B443100A6FE3E /* MyFlickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65734FC1C6B443100A6FE3E /* MyFlickerTableViewCell.xib */; };
+		A65735011C6B457800A6FE3E /* RecentPhotosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65735001C6B457800A6FE3E /* RecentPhotosTableViewController.m */; };
+		A65C91C01C77AEAC005788BF /* TextAutoLayoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65C91BF1C77AEAC005788BF /* TextAutoLayoutView.xib */; };
+		A65C91C41C77B57E005788BF /* landscape-mountains-nature-clouds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A65C91C21C77B57E005788BF /* landscape-mountains-nature-clouds.jpg */; };
+		A65C91C51C77B57E005788BF /* pexels-photo-small.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A65C91C31C77B57E005788BF /* pexels-photo-small.jpeg */; };
+		A65C91C81C78ACD6005788BF /* ServiceCallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A65C91C71C78ACD6005788BF /* ServiceCallManager.m */; };
+		A65C91CA1C78BD94005788BF /* TestAutoLayout2.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65C91C91C78BD94005788BF /* TestAutoLayout2.xib */; };
+		A65C91CE1C78BE22005788BF /* AutoLayoutScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65C91CC1C78BE22005788BF /* AutoLayoutScrollViewController.m */; };
+		A65C91CF1C78BE22005788BF /* AutoLayoutScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65C91CD1C78BE22005788BF /* AutoLayoutScrollViewController.xib */; };
 		A67C44A21C6895C200F5FC86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A67C44A11C6895C200F5FC86 /* main.m */; };
 		A67C44A51C6895C200F5FC86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A67C44A41C6895C200F5FC86 /* AppDelegate.m */; };
 		A67C44A81C6895C200F5FC86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67C44A71C6895C200F5FC86 /* ViewController.m */; };
-		A67C44AB1C6895C200F5FC86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67C44A91C6895C200F5FC86 /* Main.storyboard */; };
 		A67C44AD1C6895C200F5FC86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67C44AC1C6895C200F5FC86 /* Assets.xcassets */; };
 		A67C44B01C6895C200F5FC86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67C44AE1C6895C200F5FC86 /* LaunchScreen.storyboard */; };
 		A67C44BB1C6895C200F5FC86 /* PhotosFromFlickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A67C44BA1C6895C200F5FC86 /* PhotosFromFlickerUITests.m */; };
+		A67C44C71C6896E700F5FC86 /* MyFlickerPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A67C44C61C6896E700F5FC86 /* MyFlickerPhoto.m */; };
+		A67C44CA1C68A50600F5FC86 /* ItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67C44C91C68A50600F5FC86 /* ItemsTableViewController.m */; };
+		A67C44D51C6932F300F5FC86 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A67C44D41C6932F300F5FC86 /* CoreDataManager.m */; };
+		A67C44D71C69337600F5FC86 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67C44D61C69337600F5FC86 /* CoreData.framework */; };
+		A67C44DA1C6933EA00F5FC86 /* ModelulDeCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A67C44D81C6933EA00F5FC86 /* ModelulDeCoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +45,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A656B5C31C74A71E00FD1212 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		A656B5C41C74A71E00FD1212 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		A656B5C61C74E76D00FD1212 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A65734F11C69360A00A6FE3E /* FlickerPhotoCoreData+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlickerPhotoCoreData+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A65734F21C69360A00A6FE3E /* FlickerPhotoCoreData+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FlickerPhotoCoreData+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A65734F31C69360A00A6FE3E /* FlickerPhotoCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickerPhotoCoreData.h; sourceTree = "<group>"; };
+		A65734F41C69360A00A6FE3E /* FlickerPhotoCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickerPhotoCoreData.m; sourceTree = "<group>"; };
+		A65734F91C69365F00A6FE3E /* CoreDataObjectWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataObjectWriter.h; sourceTree = "<group>"; };
+		A65734FA1C6B443100A6FE3E /* MyFlickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFlickerTableViewCell.h; sourceTree = "<group>"; };
+		A65734FB1C6B443100A6FE3E /* MyFlickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFlickerTableViewCell.m; sourceTree = "<group>"; };
+		A65734FC1C6B443100A6FE3E /* MyFlickerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyFlickerTableViewCell.xib; sourceTree = "<group>"; };
+		A65734FF1C6B457800A6FE3E /* RecentPhotosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotosTableViewController.h; sourceTree = "<group>"; };
+		A65735001C6B457800A6FE3E /* RecentPhotosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotosTableViewController.m; sourceTree = "<group>"; };
+		A65C91BF1C77AEAC005788BF /* TextAutoLayoutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextAutoLayoutView.xib; sourceTree = "<group>"; };
+		A65C91C21C77B57E005788BF /* landscape-mountains-nature-clouds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "landscape-mountains-nature-clouds.jpg"; sourceTree = "<group>"; };
+		A65C91C31C77B57E005788BF /* pexels-photo-small.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pexels-photo-small.jpeg"; sourceTree = "<group>"; };
+		A65C91C61C78ACD6005788BF /* ServiceCallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceCallManager.h; sourceTree = "<group>"; };
+		A65C91C71C78ACD6005788BF /* ServiceCallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceCallManager.m; sourceTree = "<group>"; };
+		A65C91C91C78BD94005788BF /* TestAutoLayout2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestAutoLayout2.xib; sourceTree = "<group>"; };
+		A65C91CB1C78BE22005788BF /* AutoLayoutScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutScrollViewController.h; sourceTree = "<group>"; };
+		A65C91CC1C78BE22005788BF /* AutoLayoutScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutScrollViewController.m; sourceTree = "<group>"; };
+		A65C91CD1C78BE22005788BF /* AutoLayoutScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutScrollViewController.xib; sourceTree = "<group>"; };
 		A67C449D1C6895C200F5FC86 /* PhotosFromFlicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosFromFlicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67C44A11C6895C200F5FC86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A67C44A31C6895C200F5FC86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A67C44A41C6895C200F5FC86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A67C44A61C6895C200F5FC86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A67C44A71C6895C200F5FC86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A67C44AA1C6895C200F5FC86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A67C44AC1C6895C200F5FC86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A67C44AF1C6895C200F5FC86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A67C44B11C6895C200F5FC86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A67C44B61C6895C200F5FC86 /* PhotosFromFlickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotosFromFlickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67C44BA1C6895C200F5FC86 /* PhotosFromFlickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosFromFlickerUITests.m; sourceTree = "<group>"; };
 		A67C44BC1C6895C200F5FC86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67C44C51C6896E700F5FC86 /* MyFlickerPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFlickerPhoto.h; sourceTree = "<group>"; };
+		A67C44C61C6896E700F5FC86 /* MyFlickerPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFlickerPhoto.m; sourceTree = "<group>"; };
+		A67C44C81C68A50600F5FC86 /* ItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsTableViewController.h; sourceTree = "<group>"; };
+		A67C44C91C68A50600F5FC86 /* ItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsTableViewController.m; sourceTree = "<group>"; };
+		A67C44D31C6932F300F5FC86 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		A67C44D41C6932F300F5FC86 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		A67C44D61C69337600F5FC86 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A67C44D91C6933EA00F5FC86 /* ModelulDeCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelulDeCoreData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67C44D71C69337600F5FC86 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +108,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A65734F81C69364A00A6FE3E /* core data */ = {
+			isa = PBXGroup;
+			children = (
+				A65734F91C69365F00A6FE3E /* CoreDataObjectWriter.h */,
+				A67C44D31C6932F300F5FC86 /* CoreDataManager.h */,
+				A67C44D41C6932F300F5FC86 /* CoreDataManager.m */,
+			);
+			name = "core data";
+			sourceTree = "<group>";
+		};
+		A65C91C11C77B57E005788BF /* poze */ = {
+			isa = PBXGroup;
+			children = (
+				A65C91C21C77B57E005788BF /* landscape-mountains-nature-clouds.jpg */,
+				A65C91C31C77B57E005788BF /* pexels-photo-small.jpeg */,
+			);
+			path = poze;
+			sourceTree = "<group>";
+		};
 		A67C44941C6895C200F5FC86 = {
 			isa = PBXGroup;
 			children = (
+				A65734F11C69360A00A6FE3E /* FlickerPhotoCoreData+CoreDataProperties.h */,
+				A65734F21C69360A00A6FE3E /* FlickerPhotoCoreData+CoreDataProperties.m */,
+				A65734F31C69360A00A6FE3E /* FlickerPhotoCoreData.h */,
+				A65734F41C69360A00A6FE3E /* FlickerPhotoCoreData.m */,
+				A67C44D81C6933EA00F5FC86 /* ModelulDeCoreData.xcdatamodeld */,
+				A67C44D61C69337600F5FC86 /* CoreData.framework */,
 				A67C449F1C6895C200F5FC86 /* PhotosFromFlicker */,
 				A67C44B91C6895C200F5FC86 /* PhotosFromFlickerUITests */,
 				A67C449E1C6895C200F5FC86 /* Products */,
@@ -85,7 +158,27 @@
 				A67C44A41C6895C200F5FC86 /* AppDelegate.m */,
 				A67C44A61C6895C200F5FC86 /* ViewController.h */,
 				A67C44A71C6895C200F5FC86 /* ViewController.m */,
-				A67C44A91C6895C200F5FC86 /* Main.storyboard */,
+				A656B5C31C74A71E00FD1212 /* PhotoViewController.h */,
+				A656B5C41C74A71E00FD1212 /* PhotoViewController.m */,
+				A65C91C91C78BD94005788BF /* TestAutoLayout2.xib */,
+				A65C91CB1C78BE22005788BF /* AutoLayoutScrollViewController.h */,
+				A65C91CC1C78BE22005788BF /* AutoLayoutScrollViewController.m */,
+				A65C91CD1C78BE22005788BF /* AutoLayoutScrollViewController.xib */,
+				A65C91BF1C77AEAC005788BF /* TextAutoLayoutView.xib */,
+				A65734FA1C6B443100A6FE3E /* MyFlickerTableViewCell.h */,
+				A65734FB1C6B443100A6FE3E /* MyFlickerTableViewCell.m */,
+				A656B5C61C74E76D00FD1212 /* Main.storyboard */,
+				A65734FC1C6B443100A6FE3E /* MyFlickerTableViewCell.xib */,
+				A67C44C81C68A50600F5FC86 /* ItemsTableViewController.h */,
+				A67C44C91C68A50600F5FC86 /* ItemsTableViewController.m */,
+				A65734FF1C6B457800A6FE3E /* RecentPhotosTableViewController.h */,
+				A65735001C6B457800A6FE3E /* RecentPhotosTableViewController.m */,
+				A67C44C51C6896E700F5FC86 /* MyFlickerPhoto.h */,
+				A67C44C61C6896E700F5FC86 /* MyFlickerPhoto.m */,
+				A65C91C61C78ACD6005788BF /* ServiceCallManager.h */,
+				A65C91C71C78ACD6005788BF /* ServiceCallManager.m */,
+				A65734F81C69364A00A6FE3E /* core data */,
+				A65C91C11C77B57E005788BF /* poze */,
 				A67C44AC1C6895C200F5FC86 /* Assets.xcassets */,
 				A67C44AE1C6895C200F5FC86 /* LaunchScreen.storyboard */,
 				A67C44B11C6895C200F5FC86 /* Info.plist */,
@@ -191,9 +284,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65C91C01C77AEAC005788BF /* TextAutoLayoutView.xib in Resources */,
+				A65734FE1C6B443100A6FE3E /* MyFlickerTableViewCell.xib in Resources */,
+				A65C91C51C77B57E005788BF /* pexels-photo-small.jpeg in Resources */,
 				A67C44B01C6895C200F5FC86 /* LaunchScreen.storyboard in Resources */,
+				A65C91CF1C78BE22005788BF /* AutoLayoutScrollViewController.xib in Resources */,
+				A65C91C41C77B57E005788BF /* landscape-mountains-nature-clouds.jpg in Resources */,
+				A65C91CA1C78BD94005788BF /* TestAutoLayout2.xib in Resources */,
 				A67C44AD1C6895C200F5FC86 /* Assets.xcassets in Resources */,
-				A67C44AB1C6895C200F5FC86 /* Main.storyboard in Resources */,
+				A656B5C71C74E76D00FD1212 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +311,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A67C44A81C6895C200F5FC86 /* ViewController.m in Sources */,
+				A65C91C81C78ACD6005788BF /* ServiceCallManager.m in Sources */,
+				A65734F51C69360A00A6FE3E /* FlickerPhotoCoreData+CoreDataProperties.m in Sources */,
+				A67C44D51C6932F300F5FC86 /* CoreDataManager.m in Sources */,
+				A65735011C6B457800A6FE3E /* RecentPhotosTableViewController.m in Sources */,
+				A67C44CA1C68A50600F5FC86 /* ItemsTableViewController.m in Sources */,
 				A67C44A51C6895C200F5FC86 /* AppDelegate.m in Sources */,
+				A65734FD1C6B443100A6FE3E /* MyFlickerTableViewCell.m in Sources */,
+				A65C91CE1C78BE22005788BF /* AutoLayoutScrollViewController.m in Sources */,
+				A656B5C51C74A71E00FD1212 /* PhotoViewController.m in Sources */,
+				A67C44DA1C6933EA00F5FC86 /* ModelulDeCoreData.xcdatamodeld in Sources */,
 				A67C44A21C6895C200F5FC86 /* main.m in Sources */,
+				A65734F61C69360A00A6FE3E /* FlickerPhotoCoreData.m in Sources */,
+				A67C44C71C6896E700F5FC86 /* MyFlickerPhoto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +346,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A67C44A91C6895C200F5FC86 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A67C44AA1C6895C200F5FC86 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A67C44AE1C6895C200F5FC86 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -402,6 +504,7 @@
 				A67C44C11C6895C200F5FC86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A67C44C21C6895C200F5FC86 /* Build configuration list for PBXNativeTarget "PhotosFromFlickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -410,8 +513,22 @@
 				A67C44C41C6895C200F5FC86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A67C44D81C6933EA00F5FC86 /* ModelulDeCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A67C44D91C6933EA00F5FC86 /* ModelulDeCoreData.xcdatamodel */,
+			);
+			currentVersion = A67C44D91C6933EA00F5FC86 /* ModelulDeCoreData.xcdatamodel */;
+			path = ModelulDeCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A67C44951C6895C200F5FC86 /* Project object */;
 }

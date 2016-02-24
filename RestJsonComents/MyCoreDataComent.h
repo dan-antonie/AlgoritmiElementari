@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-
+#import "CoreDataObjectWriter.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MyCoreDataComent : NSManagedObject
+@interface MyCoreDataComent : NSManagedObject<CoreDataObjectWriter>
 
 // Insert code here to declare functionality of your managed object subclass
++ (void)insertOrUpdateCoreDataObject:(id<CoreDataObjectWriter>)coreDataObject forDictionary:(NSDictionary*)dictionarDeTransformatInObiect inContext:(NSManagedObjectContext *)managedObjectContext;
 
 @end
 

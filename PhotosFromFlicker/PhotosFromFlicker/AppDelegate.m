@@ -5,7 +5,7 @@
 //  Created by Horatiu on 08/02/16.
 //  Copyright © 2016 Horatiu. All rights reserved.
 //
-
+#import "CoreDataManager.h"
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [kCoreDataManager initCoreData];
     return YES;
 }
 

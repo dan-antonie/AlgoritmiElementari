@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A65735081C6B685100A6FE3E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65735071C6B685100A6FE3E /* CoreData.framework */; };
+		A657350B1C6B686800A6FE3E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A65735091C6B686800A6FE3E /* Model.xcdatamodeld */; };
+		A65735161C6B6AC100A6FE3E /* MyCoreDataComent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A65735131C6B6AC100A6FE3E /* MyCoreDataComent+CoreDataProperties.m */; };
+		A65735171C6B6AC100A6FE3E /* MyCoreDataComent.m in Sources */ = {isa = PBXBuildFile; fileRef = A65735151C6B6AC100A6FE3E /* MyCoreDataComent.m */; };
+		A657351C1C6B6FA000A6FE3E /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A657351B1C6B6FA000A6FE3E /* CoreDataManager.m */; };
 		A68049A21C67BF41005787DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A68049A11C67BF41005787DF /* main.m */; };
 		A68049A51C67BF41005787DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A68049A41C67BF41005787DF /* AppDelegate.m */; };
 		A68049A81C67BF41005787DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68049A71C67BF41005787DF /* ViewController.m */; };
@@ -14,6 +19,9 @@
 		A68049AD1C67BF41005787DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68049AC1C67BF41005787DF /* Assets.xcassets */; };
 		A68049B01C67BF41005787DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68049AE1C67BF41005787DF /* LaunchScreen.storyboard */; };
 		A68049BB1C67BF41005787DF /* RestJsonComentsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A68049BA1C67BF41005787DF /* RestJsonComentsUITests.m */; };
+		A68049C71C67BFB7005787DF /* RestConectionSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = A68049C61C67BFB7005787DF /* RestConectionSingleton.m */; };
+		A68049CA1C67C8D8005787DF /* MyComent.m in Sources */ = {isa = PBXBuildFile; fileRef = A68049C91C67C8D8005787DF /* MyComent.m */; };
+		A68049CD1C67CF1C005787DF /* ComentListFaraFrcTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68049CC1C67CF1C005787DF /* ComentListFaraFrcTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +35,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A65735071C6B685100A6FE3E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A657350A1C6B686800A6FE3E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A65735121C6B6AC100A6FE3E /* MyCoreDataComent+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyCoreDataComent+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A65735131C6B6AC100A6FE3E /* MyCoreDataComent+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MyCoreDataComent+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A65735141C6B6AC100A6FE3E /* MyCoreDataComent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCoreDataComent.h; sourceTree = "<group>"; };
+		A65735151C6B6AC100A6FE3E /* MyCoreDataComent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCoreDataComent.m; sourceTree = "<group>"; };
+		A65735191C6B6F8900A6FE3E /* CoreDataObjectWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataObjectWriter.h; sourceTree = "<group>"; };
+		A657351A1C6B6F9700A6FE3E /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		A657351B1C6B6FA000A6FE3E /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		A680499D1C67BF41005787DF /* RestJsonComents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestJsonComents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68049A11C67BF41005787DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A68049A31C67BF41005787DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +57,12 @@
 		A68049B61C67BF41005787DF /* RestJsonComentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestJsonComentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68049BA1C67BF41005787DF /* RestJsonComentsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestJsonComentsUITests.m; sourceTree = "<group>"; };
 		A68049BC1C67BF41005787DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A68049C51C67BFB7005787DF /* RestConectionSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestConectionSingleton.h; sourceTree = "<group>"; };
+		A68049C61C67BFB7005787DF /* RestConectionSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestConectionSingleton.m; sourceTree = "<group>"; };
+		A68049C81C67C8D8005787DF /* MyComent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyComent.h; sourceTree = "<group>"; };
+		A68049C91C67C8D8005787DF /* MyComent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyComent.m; sourceTree = "<group>"; };
+		A68049CB1C67CF1C005787DF /* ComentListFaraFrcTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComentListFaraFrcTableViewController.h; sourceTree = "<group>"; };
+		A68049CC1C67CF1C005787DF /* ComentListFaraFrcTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComentListFaraFrcTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65735081C6B685100A6FE3E /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A65735181C6B6EE800A6FE3E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A65735191C6B6F8900A6FE3E /* CoreDataObjectWriter.h */,
+				A657351B1C6B6FA000A6FE3E /* CoreDataManager.m */,
+				A657351A1C6B6F9700A6FE3E /* CoreDataManager.h */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		A68049941C67BF41005787DF = {
 			isa = PBXGroup;
 			children = (
+				A65735121C6B6AC100A6FE3E /* MyCoreDataComent+CoreDataProperties.h */,
+				A65735131C6B6AC100A6FE3E /* MyCoreDataComent+CoreDataProperties.m */,
+				A65735141C6B6AC100A6FE3E /* MyCoreDataComent.h */,
+				A65735151C6B6AC100A6FE3E /* MyCoreDataComent.m */,
+				A65735071C6B685100A6FE3E /* CoreData.framework */,
 				A680499F1C67BF41005787DF /* RestJsonComents */,
 				A68049B91C67BF41005787DF /* RestJsonComentsUITests */,
 				A680499E1C67BF41005787DF /* Products */,
@@ -85,8 +124,16 @@
 				A68049A41C67BF41005787DF /* AppDelegate.m */,
 				A68049A61C67BF41005787DF /* ViewController.h */,
 				A68049A71C67BF41005787DF /* ViewController.m */,
+				A65735091C6B686800A6FE3E /* Model.xcdatamodeld */,
+				A68049CB1C67CF1C005787DF /* ComentListFaraFrcTableViewController.h */,
+				A68049CC1C67CF1C005787DF /* ComentListFaraFrcTableViewController.m */,
+				A68049C81C67C8D8005787DF /* MyComent.h */,
+				A68049C91C67C8D8005787DF /* MyComent.m */,
+				A68049C51C67BFB7005787DF /* RestConectionSingleton.h */,
+				A68049C61C67BFB7005787DF /* RestConectionSingleton.m */,
 				A68049A91C67BF41005787DF /* Main.storyboard */,
 				A68049AC1C67BF41005787DF /* Assets.xcassets */,
+				A65735181C6B6EE800A6FE3E /* CoreData */,
 				A68049AE1C67BF41005787DF /* LaunchScreen.storyboard */,
 				A68049B11C67BF41005787DF /* Info.plist */,
 				A68049A01C67BF41005787DF /* Supporting Files */,
@@ -212,8 +259,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A68049A81C67BF41005787DF /* ViewController.m in Sources */,
+				A68049CD1C67CF1C005787DF /* ComentListFaraFrcTableViewController.m in Sources */,
+				A657351C1C6B6FA000A6FE3E /* CoreDataManager.m in Sources */,
+				A65735161C6B6AC100A6FE3E /* MyCoreDataComent+CoreDataProperties.m in Sources */,
+				A65735171C6B6AC100A6FE3E /* MyCoreDataComent.m in Sources */,
 				A68049A51C67BF41005787DF /* AppDelegate.m in Sources */,
+				A657350B1C6B686800A6FE3E /* Model.xcdatamodeld in Sources */,
+				A68049C71C67BFB7005787DF /* RestConectionSingleton.m in Sources */,
 				A68049A21C67BF41005787DF /* main.m in Sources */,
+				A68049CA1C67C8D8005787DF /* MyComent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +456,7 @@
 				A68049C11C67BF41005787DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A68049C21C67BF41005787DF /* Build configuration list for PBXNativeTarget "RestJsonComentsUITests" */ = {
 			isa = XCConfigurationList;
@@ -410,8 +465,22 @@
 				A68049C41C67BF41005787DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A65735091C6B686800A6FE3E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A657350A1C6B686800A6FE3E /* Model.xcdatamodel */,
+			);
+			currentVersion = A657350A1C6B686800A6FE3E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A68049951C67BF41005787DF /* Project object */;
 }

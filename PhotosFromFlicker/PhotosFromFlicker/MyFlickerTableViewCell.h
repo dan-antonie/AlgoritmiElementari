@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MyFlickerTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *title;
+@property (weak, nonatomic) IBOutlet UILabel *author;
+@property (weak, nonatomic) IBOutlet UILabel *tags;
 
 @end

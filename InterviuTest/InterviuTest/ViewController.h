@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MyComent.h"
 @interface ViewController : UIViewController
 
 
